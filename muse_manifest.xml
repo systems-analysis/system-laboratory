@@ -1,0 +1,673 @@
+<manifest alg="2" build="2017.0.3.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" ftp_hostname="ftp://ftp.system-labor-ru.1gb.ru" ftp_rootfolder="/http" exportTarget="FTP" domain="https://system-laboratory.ru" resolutions="1x,2x" timestamp="1516701755821">
+  <folder name="css">
+    <file name="site_global.css" crc="3895645853"/>
+    <file name="master_______-_2.css" crc="2653276" ref="services"/>
+    <file name="nomq_preview_master_______-_2.css" crc="201583081" ref="services"/>
+    <file name="master_______-_1.css" crc="3996554660" ref="methodology:it:model:statistics:operation_reserch"/>
+    <file name="nomq_preview_master_______-_1.css" crc="4078928282" ref="methodology:it:model:statistics:operation_reserch"/>
+    <file name="master_______-_3.css" crc="277714323" ref="operation:system:methods:statistical_method"/>
+    <file name="nomq_preview_master_______-_3.css" crc="518342793" ref="operation:system:methods:statistical_method"/>
+    <file name="master_______-_11.css" crc="114756128" ref="index"/>
+    <file name="nomq_preview_master_______-_11.css" crc="3904085577" ref="index"/>
+    <file name="master_______-_.css" crc="526031123" ref="company:contact"/>
+    <file name="nomq_preview_master_______-_.css" crc="286719827" ref="company:contact"/>
+    <file name="index.css" crc="3967552006" ref="index"/>
+    <file name="nomq_index.css" crc="530025873" ref="index"/>
+    <file name="operation.css" crc="504214894" ref="operation"/>
+    <file name="nomq_operation.css" crc="311398813" ref="operation"/>
+    <file name="iefonts_operation.css" crc="253168516" ref="operation"/>
+    <file name="methodology.css" crc="19152153" ref="methodology"/>
+    <file name="nomq_methodology.css" crc="4067780077" ref="methodology"/>
+    <file name="it.css" crc="224828653" ref="it"/>
+    <file name="nomq_it.css" crc="360919948" ref="it"/>
+    <file name="system.css" crc="4020168080" ref="system"/>
+    <file name="nomq_system.css" crc="201073446" ref="system"/>
+    <file name="iefonts_system.css" crc="253168516" ref="system"/>
+    <file name="methods.css" crc="503506692" ref="methods"/>
+    <file name="nomq_methods.css" crc="4291933809" ref="methods"/>
+    <file name="iefonts_methods.css" crc="253168516" ref="methods"/>
+    <file name="404.css" crc="495276253" ref="404"/>
+    <file name="nomq_404.css" crc="76513503" ref="404"/>
+    <file name="model.css" crc="4201959876" ref="model"/>
+    <file name="nomq_model.css" crc="4115048761" ref="model"/>
+    <file name="statistical_method.css" crc="4249731478" ref="statistical_method"/>
+    <file name="nomq_statistical_method.css" crc="4286802501" ref="statistical_method"/>
+    <file name="iefonts_statistical_method.css" crc="253168516" ref="statistical_method"/>
+    <file name="statistics.css" crc="4113077225" ref="statistics"/>
+    <file name="nomq_statistics.css" crc="11949942" ref="statistics"/>
+    <file name="company.css" crc="3965184470" ref="company"/>
+    <file name="nomq_company.css" crc="116967379" ref="company"/>
+    <file name="iefonts_company.css" crc="253168516" ref="company"/>
+    <file name="contact.css" crc="224177874" ref="contact"/>
+    <file name="nomq_contact.css" crc="69885290" ref="contact"/>
+    <file name="iefonts_contact.css" crc="253168516" ref="contact"/>
+    <file name="services.css" crc="3824668909" ref="services"/>
+    <file name="nomq_services.css" crc="5304797" ref="services"/>
+    <file name="iefonts_services.css" crc="253168516" ref="services"/>
+    <file name="operation_reserch.css" crc="347772540" ref="operation_reserch"/>
+    <file name="nomq_operation_reserch.css" crc="4286272760" ref="operation_reserch"/>
+  </folder>
+  <folder name="fonts">
+    <file name="sfuidisplay-light.woff" crc="3916069844"/>
+    <file name="sfuidisplay-light.eot" crc="270466891"/>
+    <file name="sfuidisplay-light.svg" crc="82893466"/>
+    <file name="myriadpro-semibold.woff" crc="4198929131"/>
+    <file name="myriadpro-semibold.eot" crc="431733531"/>
+    <file name="myriadpro-semibold.svg" crc="299922928"/>
+    <file name="sfuidisplay-regular.woff" crc="194367325"/>
+    <file name="sfuidisplay-regular.eot" crc="438240591"/>
+    <file name="sfuidisplay-regular.svg" crc="469686496"/>
+    <file name="myriadpro-bold.woff" crc="470645330"/>
+    <file name="myriadpro-bold.eot" crc="3986936385"/>
+    <file name="myriadpro-bold.svg" crc="4024731665"/>
+    <file name="proximanova-bold.woff" crc="92787553"/>
+    <file name="proximanova-bold.eot" crc="3922769615"/>
+    <file name="proximanova-bold.svg" crc="454017496"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="sfuidisplay-medium.woff" crc="4050752087"/>
+    <file name="sfuidisplay-medium.eot" crc="297881344"/>
+    <file name="sfuidisplay-medium.svg" crc="4028105949"/>
+    <file name="proximanova-light.woff" crc="3816475371"/>
+    <file name="proximanova-light.eot" crc="393527809"/>
+    <file name="proximanova-light.svg" crc="185048157"/>
+    <file name="sfuidisplay-bold.woff" crc="4003908766"/>
+    <file name="sfuidisplay-bold.eot" crc="244138302"/>
+    <file name="sfuidisplay-bold.svg" crc="4197199776"/>
+    <file name="sfuidisplay-black.woff" crc="4153250115"/>
+    <file name="sfuidisplay-black.eot" crc="3779439131"/>
+    <file name="sfuidisplay-black.svg" crc="4286374515"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="sfuidisplay-semibold.woff" crc="88110740"/>
+    <file name="sfuidisplay-semibold.eot" crc="255618092"/>
+    <file name="sfuidisplay-semibold.svg" crc="4159985427"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="sfuidisplay-semibold.woff" crc="88110740"/>
+    <file name="sfuidisplay-semibold.eot" crc="255618092"/>
+    <file name="sfuidisplay-semibold.svg" crc="4159985427"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+    <file name="sfuitext-semibold.woff" crc="374372596"/>
+    <file name="sfuitext-semibold.eot" crc="363124162"/>
+    <file name="sfuitext-semibold.svg" crc="3965859873"/>
+    <file name="sf-pro-text_bold.woff" crc="209838886"/>
+    <file name="sf-pro-text_bold.eot" crc="4015041626"/>
+    <file name="sf-pro-text_bold.svg" crc="499388221"/>
+    <file name="myriadpro-regular.woff" crc="3928397812"/>
+    <file name="myriadpro-regular.eot" crc="219015293"/>
+    <file name="myriadpro-regular.svg" crc="297997701"/>
+  </folder>
+  <folder name="assets">
+    <file name="system_laboratory_company.pdf" crc="109427788" seo="true" mt="1490802074000"/>
+    <file name="system_analysis_laboratory.docx" crc="4196320594" seo="true" mt="1490255372000"/>
+    <file name="system_analysis_laboratory.pdf" crc="3955312768" seo="true" mt="1511007718000"/>
+    <file name="systems_analysis.pdf" crc="414366801" seo="true" mt="1511007558000"/>
+    <file name="operations_research.pdf" crc="355563762" seo="true" mt="1511007626000"/>
+    <file name="or.jpg" crc="402557797" seo="true" mt="1499351854000"/>
+    <file name="sa.jpg" crc="4261284221" seo="true" mt="1499352398000"/>
+    <file name="image_02.jpg" crc="3797703670" seo="true" mt="1505834746000"/>
+    <file name="image_03.jpg" crc="4242042158" seo="true" mt="1505834822000"/>
+    <file name="image_04.jpg" crc="4017252568" seo="true" mt="1505834882000"/>
+    <file name="image_05.jpg" crc="25806736" seo="true" mt="1505834916000"/>
+    <file name="image_06.jpg" crc="4004904692" seo="true" mt="1505835013000"/>
+    <file name="image_07.jpg" crc="4107032729" seo="true" mt="1505835042000"/>
+    <file name="image_08.jpg" crc="4252171390" seo="true" mt="1505835069000"/>
+    <file name="image_09.jpg" crc="511770274" seo="true" mt="1505835161000"/>
+    <file name="image_10.jpg" crc="3974984501" seo="true" mt="1505835193000"/>
+    <file name="image_11.jpg" crc="431093923" seo="true" mt="1505835220000"/>
+    <file name="image_12.jpg" crc="4043763462" seo="true" mt="1505831521000"/>
+    <file name="image_13.jpg" crc="247700606" seo="true" mt="1505836365000"/>
+    <file name="image_14.jpg" crc="3797534574" seo="true" mt="1505836412000"/>
+    <file name="image_01.jpg" crc="21007288" seo="true" mt="1505907957000"/>
+    <file name="image_15.jpg" crc="4249800085" seo="true" mt="1505910337000"/>
+    <file name="image_16.jpg" crc="3826613541" seo="true" mt="1505910429000"/>
+    <file name="image_17.jpg" crc="387317910" seo="true" mt="1505910553000"/>
+    <file name="image_18.jpg" crc="435286623" seo="true" mt="1505910602000"/>
+    <file name="image_19.jpg" crc="3856802572" seo="true" mt="1505910678000"/>
+    <file name="image_20.jpg" crc="270421950" seo="true" mt="1505910739000"/>
+    <file name="image_21.jpg" crc="4235799903" seo="true" mt="1505910804000"/>
+    <file name="image_22.jpg" crc="397510384" seo="true" mt="1505910865000"/>
+    <file name="image_23.jpg" crc="306668706" seo="true" mt="1505910904000"/>
+    <file name="image_24.jpg" crc="22770727" seo="true" mt="1505910947000"/>
+    <file name="image_25.jpg" crc="28405854" seo="true" mt="1505910991000"/>
+    <file name="image_26.jpg" crc="3994896134" seo="true" mt="1505911040000"/>
+    <file name="image_27.jpg" crc="378122316" seo="true" mt="1505911098000"/>
+    <file name="image_28.jpg" crc="431314141" seo="true" mt="1505911179000"/>
+    <file name="image_29.jpg" crc="3813469900" seo="true" mt="1505911336000"/>
+    <file name="image_30.jpg" crc="3969725122" seo="true" mt="1505911399000"/>
+    <file name="image_31.jpg" crc="143756468" seo="true" mt="1505911427000"/>
+    <file name="image_32.jpg" crc="277916793" seo="true" mt="1505911472000"/>
+    <file name="image_33.jpg" crc="353102002" seo="true" mt="1505911512000"/>
+    <file name="image_34.jpg" crc="4270303239" seo="true" mt="1505911534000"/>
+    <file name="image_35.jpg" crc="4067933667" seo="true" mt="1505911561000"/>
+    <file name="image_36.jpg" crc="3976404325" seo="true" mt="1505911635000"/>
+    <file name="image_37.jpg" crc="510627678" seo="true" mt="1505912133000"/>
+    <file name="image_38.jpg" crc="4244431588" seo="true" mt="1505912225000"/>
+    <file name="image_39.jpg" crc="4174028679" seo="true" mt="1505912258000"/>
+    <file name="image_40.jpg" crc="335533859" seo="true" mt="1505912331000"/>
+    <file name="image_41.jpg" crc="265011038" seo="true" mt="1505912401000"/>
+    <file name="facebook.jpg" crc="534087520" seo="true" mt="1505988614000"/>
+    <file name="lj.jpg" crc="381493080" seo="true" mt="1505986641000"/>
+    <file name="twitter.jpg" crc="470731472" seo="true" mt="1505986097000"/>
+    <file name="vk.jpg" crc="3783482792" seo="true" mt="1505985972000"/>
+    <file name="tumblr.jpg" crc="175892345" seo="true" mt="1505988349000"/>
+    <file name="logo_w.jpg" crc="235509992" seo="true" mt="1505990512000"/>
+    <file name="logo_b.jpg" crc="205003353" seo="true" mt="1505990429000"/>
+    <file name="systemlab.pdf" crc="411987507" seo="true" mt="1516698354000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+    <file name="museutils.js" crc="46400467" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+    <file name="whatinput.js" crc="86476730" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+    <file name="museconfig.js" crc="436936948" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="532123423" ref="index:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system"/>
+    <file name="webpro.js" crc="4152390327" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system"/>
+    <file name="musewpslideshow.js" crc="380562115" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3986278607" ref="index"/>
+    <file name="touchswipe.js" crc="4228958816" ref="index"/>
+    <file name="jquery.musemenu.js" crc="3936200140" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system"/>
+    <file name="jquery.watch.js" crc="4178585335" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+    <file name="musewpdisclosure.js" crc="204784597" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+    <file name="jquery.museresponsive.js" crc="52098982" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+    <file name="require.js" crc="85721165" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="217876451" ref="index:methods"/>
+    <file name="sky.jpg" crc="3981842435" seo="true" ref="index">
+      <caption webpage="index" alt="Лаборатория системного анализа."/>
+      <caption webpage="index" alt="Лаборатория системного анализа."/>
+      <caption webpage="index" alt="Лаборатория системного анализа."/>
+      <caption webpage="index" alt="Лаборатория системного анализа."/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index:company:services:methods:contact:operation_reserch:statistics:it:methodology:model:operation:statistical_method:system:404"/>
+    <file name="industry_1.jpg" crc="501094860" seo="true" ref="index">
+      <caption webpage="index" alt="Лаборатория системного анализа. Моделирование."/>
+      <caption webpage="index" alt="Лаборатория системного анализа. Моделирование."/>
+      <caption webpage="index" alt="Лаборатория системного анализа. Моделирование."/>
+    </file>
+    <file name="factory1.jpg" crc="361656236" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="comp1.jpg" crc="4039385855" seo="true" ref="index">
+      <caption webpage="index" alt="Лаборатория системного анализа.Разработка программного обеспечения. "/>
+      <caption webpage="index" alt="Лаборатория системного анализа.Разработка программного обеспечения. "/>
+      <caption webpage="index" alt="Лаборатория системного анализа.Разработка программного обеспечения. "/>
+    </file>
+    <file name="angle_l_01.png" crc="196747382" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="angle_r_01.png" crc="145911112" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="sky1.jpg" crc="3939497736" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="sky1_2x.jpg" crc="3823723355" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="box_white.svg" crc="195195363" ref="index:services"/>
+    <file name="box_white_poster_u325684.png" crc="367805489" ref="index:services"/>
+    <file name="instrument_white.svg" crc="185384614" ref="index:services"/>
+    <file name="instrument_white_poster_u317245.png" crc="4043818402" ref="index:services"/>
+    <file name="sciense_white.svg" crc="452901330" ref="index:services"/>
+    <file name="sciense_white_poster_u317253.png" crc="91789822" ref="index:services"/>
+    <file name="monitor_black.svg" crc="175103406" ref="index:operation_reserch:statistics:methodology:model"/>
+    <file name="monitor_black_poster_u321309.png" crc="3786947022" ref="index:operation_reserch:statistics:methodology:model"/>
+    <file name="statistica.svg" crc="3998751136" ref="index"/>
+    <file name="statistica_poster_u347772.png" crc="129659757" ref="index"/>
+    <file name="image_06-u347952-fr.jpg" crc="449361242" ref="index"/>
+    <file name="image_06-u347952-fr_2x.jpg" crc="4289094026" ref="index"/>
+    <file name="image_07.jpg" crc="4034194779" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image_07_2x.jpg" crc="26725970" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="mesh2.svg" crc="3992819125" ref="index"/>
+    <file name="mesh2_poster_u348206.png" crc="512555070" ref="index"/>
+    <file name="sky1-u347532-fr.jpg" crc="407600040" ref="index"/>
+    <file name="sky1-u347532-fr_2x.jpg" crc="4239117322" ref="index"/>
+    <file name="image_06-u347952-fr2.jpg" crc="116573956" ref="index"/>
+    <file name="image_06-u347952-fr_2x2.jpg" crc="3999969252" ref="index"/>
+    <file name="image_072.jpg" crc="26725970" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="шаблон-а-favicon.ico" crc="3971636418" ref="company"/>
+    <file name="mesh_1920.svg" crc="520164597" seo="true" ref="company">
+      <caption webpage="company" alt=""/>
+    </file>
+    <file name="mesh_1920_poster_.png" crc="364591670" ref="company"/>
+    <file name="4view.svg" crc="4020188556" seo="true" ref="company">
+      <caption webpage="company" alt=""/>
+      <caption webpage="company" alt=""/>
+      <caption webpage="company" alt=""/>
+      <caption webpage="company" alt=""/>
+      <caption webpage="company" alt=""/>
+      <caption webpage="company" alt=""/>
+      <caption webpage="company" alt=""/>
+      <caption webpage="company" alt=""/>
+    </file>
+    <file name="4view_poster_.png" crc="3916293980" ref="company"/>
+    <file name="mesh_1440.svg" crc="470014200" seo="true" ref="company">
+      <caption webpage="company" alt=""/>
+    </file>
+    <file name="mesh_1440_poster_.png" crc="4263408104" ref="company"/>
+    <file name="mesh_1280.svg" crc="279240257" seo="true" ref="company">
+      <caption webpage="company" alt=""/>
+    </file>
+    <file name="mesh_1280_poster_.png" crc="3879038987" ref="company"/>
+    <file name="mesh_960.svg" crc="3924980546" seo="true" ref="company">
+      <caption webpage="company" alt=""/>
+    </file>
+    <file name="mesh_960_poster_.png" crc="186210020" ref="company"/>
+    <file name="шаблон-в-favicon.ico" crc="3971636418" ref="services"/>
+    <file name="mesh_1920_b.svg" crc="4083289175" seo="true" ref="services">
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="mesh_1920_b_poster_.png" crc="79352409" ref="services"/>
+    <file name="monitor_white.svg" crc="4263548821" ref="services"/>
+    <file name="monitor_white_poster_u317237.png" crc="117922752" ref="services"/>
+    <file name="statistica_white.svg" crc="47816016" ref="services"/>
+    <file name="statistica_white_poster_u317229.png" crc="208578597" ref="services"/>
+    <file name="mesh_1440_b.svg" crc="4263709493" seo="true" ref="services">
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="mesh_1440_b_poster_.png" crc="3813824271" ref="services"/>
+    <file name="mesh_1280_b.svg" crc="3816432541" seo="true" ref="services">
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="mesh_1280_b_poster_.png" crc="228152530" ref="services"/>
+    <file name="mesh_960_b.svg" crc="4242188913" seo="true" ref="services">
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="mesh_960_b_poster_.png" crc="4232361061" ref="services"/>
+    <file name="mesh_640_b.svg" crc="3808595029" seo="true" ref="services">
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="mesh_640_b_poster_.png" crc="4233292522" ref="services"/>
+    <file name="mesh_480_b.svg" crc="4069591422" seo="true" ref="services">
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="mesh_480_b_poster_.png" crc="36511642" ref="services"/>
+    <file name="mesh_320_b.svg" crc="3823522174" seo="true" ref="services">
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="mesh_320_b_poster_.png" crc="105225274" ref="services"/>
+    <file name="instrument_2_blackl.svg" crc="98986010" ref="methods:operation:statistical_method:system"/>
+    <file name="instrument_2_blackl_poster_u325909.png" crc="471757089" ref="methods:operation:statistical_method:system"/>
+    <file name="box_open_blackl.svg" crc="418925751" ref="methods:operation:statistical_method:system"/>
+    <file name="box_open_blackl_poster_u325901.png" crc="3846032492" ref="methods:operation:statistical_method:system"/>
+    <file name="statistica_blackl.svg" crc="112357065" ref="methods:operation:statistical_method:system"/>
+    <file name="statistica_blackl_poster_u325917.png" crc="3990640510" ref="methods:operation:statistical_method:system"/>
+    <file name="pdf_blackl.svg" crc="323592200" ref="methods:contact"/>
+    <file name="pdf_blackl_poster_u325925.png" crc="3781812816" ref="methods:contact"/>
+    <file name="statistica_black.svg" crc="4252041706" ref="methods:operation_reserch:it:methodology:model:operation:statistical_method:system"/>
+    <file name="statistica_black_poster_u316962.png" crc="3937074118" ref="methods:operation_reserch:it:methodology:model:operation:statistical_method:system"/>
+    <file name="doc_blackl.svg" crc="501658876" ref="contact"/>
+    <file name="doc_blackl_poster_u327170.png" crc="390252097" ref="contact"/>
+    <file name="шаблон-а1-favicon.ico" crc="3971636418" ref="operation_reserch"/>
+    <file name="box_black.svg" crc="72802785" ref="operation_reserch:statistics:it:methodology"/>
+    <file name="box_black_poster_u316938.png" crc="53033500" ref="operation_reserch:statistics:it:methodology"/>
+    <file name="instrument_black.svg" crc="317651484" ref="operation_reserch:statistics:it:model"/>
+    <file name="instrument_black_poster_u321301.png" crc="203944590" ref="operation_reserch:statistics:it:model"/>
+    <file name="sciense_black.svg" crc="4286629322" ref="statistics:it:methodology:model"/>
+    <file name="sciense_black_poster_u316946.png" crc="4205242401" ref="statistics:it:methodology:model"/>
+    <file name="instrument_2.svg" crc="4207642418" ref="operation"/>
+    <file name="instrument_2_poster_u94903.png" crc="4104531311" ref="operation"/>
+    <file name="box_open.svg" crc="373884609" ref="system"/>
+    <file name="box_open_poster_u94477.png" crc="4020108689" ref="system"/>
+    <file name="sky1-u346767-fr.jpg" crc="3832910865" ref="index"/>
+    <file name="sky1-u346767-fr_2x.jpg" crc="492371283" ref="index"/>
+  </folder>
+  <file name="index.html" crc="240922175" seo="true" mt="1515426113872" redirect="true"/>
+  <file name="company.html" crc="3815743200" seo="true" mt="1516698230782" redirect="true"/>
+  <file name="services.html" crc="135248475" seo="true" mt="1516698741758" redirect="true"/>
+  <file name="methods.html" crc="105475239" seo="true" mt="1516698883310" redirect="true"/>
+  <file name="contact.html" crc="133443376" seo="true" mt="1515419086619" redirect="true"/>
+  <file name="operation_reserch.html" crc="160155418" seo="true" mt="1516700567449" redirect="true"/>
+  <file name="statistics.html" crc="466873623" seo="true" mt="1516700841578" redirect="true"/>
+  <file name="it.html" crc="3940161984" seo="true" mt="1516701360870" redirect="true"/>
+  <file name="methodology.html" crc="476606773" seo="true" mt="1516700567449" redirect="true"/>
+  <file name="model.html" crc="447626844" seo="true" mt="1516700567449" redirect="true"/>
+  <file name="operation.html" crc="75390845" seo="true" mt="1516698883310" redirect="true"/>
+  <file name="statistical_method.html" crc="4091903780" seo="true" mt="1516698883310" redirect="true"/>
+  <file name="system.html" crc="348736126" seo="true" mt="1516698883310" redirect="true"/>
+  <file name="404.html" crc="4223907585" mt="1498840162617" redirect="true"/>
+  <site>
+    <asset filename="system_laboratory_company.pdf" muse_href="upload:U178222"/>
+    <asset filename="system_analysis_laboratory.docx" muse_href="upload:U178224"/>
+    <asset filename="system_analysis_laboratory.pdf" muse_href="upload:U178226"/>
+    <asset filename="systems_analysis.pdf" muse_href="upload:U242589"/>
+    <asset filename="operations_research.pdf" muse_href="upload:U242591"/>
+    <asset filename="or.jpg" muse_href="upload:U351623"/>
+    <asset filename="sa.jpg" muse_href="upload:U351625"/>
+    <asset filename="image_02.jpg" muse_href="upload:U353053"/>
+    <asset filename="image_03.jpg" muse_href="upload:U353055"/>
+    <asset filename="image_04.jpg" muse_href="upload:U353057"/>
+    <asset filename="image_05.jpg" muse_href="upload:U353059"/>
+    <asset filename="image_06.jpg" muse_href="upload:U353061"/>
+    <asset filename="image_07.jpg" muse_href="upload:U353063"/>
+    <asset filename="image_08.jpg" muse_href="upload:U353065"/>
+    <asset filename="image_09.jpg" muse_href="upload:U353067"/>
+    <asset filename="image_10.jpg" muse_href="upload:U353069"/>
+    <asset filename="image_11.jpg" muse_href="upload:U353071"/>
+    <asset filename="image_12.jpg" muse_href="upload:U353073"/>
+    <asset filename="image_13.jpg" muse_href="upload:U353763"/>
+    <asset filename="image_14.jpg" muse_href="upload:U353765"/>
+    <asset filename="image_01.jpg" muse_href="upload:U353767"/>
+    <asset filename="image_15.jpg" muse_href="upload:U354244"/>
+    <asset filename="image_16.jpg" muse_href="upload:U354246"/>
+    <asset filename="image_17.jpg" muse_href="upload:U354248"/>
+    <asset filename="image_18.jpg" muse_href="upload:U354250"/>
+    <asset filename="image_19.jpg" muse_href="upload:U354252"/>
+    <asset filename="image_20.jpg" muse_href="upload:U354254"/>
+    <asset filename="image_21.jpg" muse_href="upload:U354256"/>
+    <asset filename="image_22.jpg" muse_href="upload:U354258"/>
+    <asset filename="image_23.jpg" muse_href="upload:U354260"/>
+    <asset filename="image_24.jpg" muse_href="upload:U354262"/>
+    <asset filename="image_25.jpg" muse_href="upload:U354264"/>
+    <asset filename="image_26.jpg" muse_href="upload:U354266"/>
+    <asset filename="image_27.jpg" muse_href="upload:U354268"/>
+    <asset filename="image_28.jpg" muse_href="upload:U354270"/>
+    <asset filename="image_29.jpg" muse_href="upload:U354272"/>
+    <asset filename="image_30.jpg" muse_href="upload:U354274"/>
+    <asset filename="image_31.jpg" muse_href="upload:U354276"/>
+    <asset filename="image_32.jpg" muse_href="upload:U354278"/>
+    <asset filename="image_33.jpg" muse_href="upload:U354280"/>
+    <asset filename="image_34.jpg" muse_href="upload:U354282"/>
+    <asset filename="image_35.jpg" muse_href="upload:U354284"/>
+    <asset filename="image_36.jpg" muse_href="upload:U354286"/>
+    <asset filename="image_37.jpg" muse_href="upload:U354714"/>
+    <asset filename="image_38.jpg" muse_href="upload:U354716"/>
+    <asset filename="image_39.jpg" muse_href="upload:U354718"/>
+    <asset filename="image_40.jpg" muse_href="upload:U354720"/>
+    <asset filename="image_41.jpg" muse_href="upload:U354722"/>
+    <asset filename="facebook.jpg" muse_href="upload:U354724"/>
+    <asset filename="lj.jpg" muse_href="upload:U354726"/>
+    <asset filename="twitter.jpg" muse_href="upload:U354728"/>
+    <asset filename="vk.jpg" muse_href="upload:U354730"/>
+    <asset filename="tumblr.jpg" muse_href="upload:U354732"/>
+    <asset filename="logo_w.jpg" muse_href="upload:U354734"/>
+    <asset filename="logo_b.jpg" muse_href="upload:U354736"/>
+    <asset filename="systemlab.pdf" muse_href="upload:U357118"/>
+    <paragraphStyle className="normal_text" uid="U49"/>
+    <paragraphStyle className="ts" uid="U105332"/>
+    <paragraphStyle className="ts1" uid="U220792"/>
+    <paragraphStyle className="ts2" uid="U220793"/>
+    <paragraphStyle className="ts3" uid="U220926"/>
+    <paragraphStyle className="ts-------1" uid="U226867"/>
+    <textLinkStyle className="ts4" uid="U331464"/>
+    <textLinkStyle className="ts-------white" uid="U337490"/>
+    <nestedListStyle className="nls-None" uid="U52"/>
+  </site>
+  <renditions>
+    <rendition device="desktop">
+      <page name="Главная" filename="index.html" muse_href="page:U93" master="U17833">
+        <breakpoint uid="U100211" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U68116" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U16899" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U286973" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U70839" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U4099" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U83" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <masterPage name="Шаблон-В1" master="U62" uid="U17833">
+        <breakpoint uid="U260033" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U18238" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U18056" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U286877" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U67270" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U67129" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U17838" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </masterPage>
+      <masterPage name="None" master="null" uid="U62">
+        <breakpoint uid="U63" maxwidth="1920" minwidth="0" squishy="true"/>
+      </masterPage>
+      <page name="Компания" filename="company.html" muse_href="page:U105" master="U19322">
+        <breakpoint uid="U225237" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U83665" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U83640" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U125360" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U83415" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U113144" maxwidth="1280" minwidth="961" squishy="true"/>
+        <breakpoint uid="U61819" maxwidth="1440" minwidth="1281" squishy="true"/>
+        <breakpoint uid="U95" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <masterPage name="Шаблон-А" master="U62" uid="U19322">
+        <breakpoint uid="U258330" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U19727" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U19545" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U66992" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U66855" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U19327" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </masterPage>
+      <page name="Услуги" filename="services.html" muse_href="page:U117" master="U203845">
+        <breakpoint uid="U228976" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U158068" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U158041" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U334372" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U157881" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U163055" maxwidth="1280" minwidth="961" squishy="true"/>
+        <breakpoint uid="U157854" maxwidth="1440" minwidth="1281" squishy="true"/>
+        <breakpoint uid="U107" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <masterPage name="Шаблон-В" master="U62" uid="U203845">
+        <breakpoint uid="U260126" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U203981" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U204157" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U333954" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U203848" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U204333" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U204508" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </masterPage>
+      <page name="Методы" filename="methods.html" muse_href="page:U129" master="U72">
+        <breakpoint uid="U221551" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U171646" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U171611" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U171449" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U169648" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U119" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <masterPage name="Шаблон-С" master="U62" uid="U72">
+        <breakpoint uid="U259939" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U853" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U799" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U333595" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U67834" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U67693" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U73" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </masterPage>
+      <page name="Контакты" filename="contact.html" muse_href="page:U141" master="U19322">
+        <breakpoint uid="U238590" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U238610" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U139412" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U137435" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U130317" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U131" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <page name="Операционные исследования" filename="operation_reserch.html" muse_href="page:U21696" master="U311512">
+        <breakpoint uid="U311432" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U311416" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U311384" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U311400" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U301489" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U21650" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <masterPage name="Шаблон-А1" master="U62" uid="U311512">
+        <breakpoint uid="U311879" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U312515" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U312088" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U311670" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U312306" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U312724" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </masterPage>
+      <page name="Статистика и анализ данных" filename="statistics.html" muse_href="page:U21744" master="U311512">
+        <breakpoint uid="U311368" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U311352" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U311336" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U311320" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U299399" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U21698" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <page name="Разработка" filename="it.html" muse_href="page:U21792" master="U311512">
+        <breakpoint uid="U311304" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U311288" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U311272" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U311256" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U311240" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U21746" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <page name="Методология" filename="methodology.html" muse_href="page:U21840" master="U311512">
+        <breakpoint uid="U313564" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U313581" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U313598" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U313547" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U313517" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U21794" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <page name="Моделирование" filename="model.html" muse_href="page:U21888" master="U311512">
+        <breakpoint uid="U311448" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U311464" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U311480" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U311496" maxwidth="960" minwidth="641" squishy="true"/>
+        <breakpoint uid="U308951" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U21842" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <page name="Исследование операций" filename="operation.html" muse_href="page:U21936" master="U72">
+        <breakpoint uid="U222424" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U221485" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U221397" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U333804" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U207187" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U207165" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U21890" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <page name="Статистические методы" filename="statistical_method.html" muse_href="page:U21984" master="U72">
+        <breakpoint uid="U221715" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U221529" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U221375" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U333874" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U221208" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U221187" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U21938" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <page name="Системный анализ" filename="system.html" muse_href="page:U22032" master="U72">
+        <breakpoint uid="U222269" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U221507" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U221419" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U333839" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U207539" maxwidth="960" minwidth="801" squishy="true"/>
+        <breakpoint uid="U207517" maxwidth="1440" minwidth="961" squishy="true"/>
+        <breakpoint uid="U21986" maxwidth="1920" minwidth="1441" squishy="true"/>
+      </page>
+      <page name="404 — Лаборатория системного анализа" filename="404.html" muse_href="page:U342397" master="U62">
+        <breakpoint uid="U345270" maxwidth="320" minwidth="0" squishy="true"/>
+        <breakpoint uid="U345286" maxwidth="480" minwidth="321" squishy="true"/>
+        <breakpoint uid="U345302" maxwidth="640" minwidth="481" squishy="true"/>
+        <breakpoint uid="U345318" maxwidth="800" minwidth="641" squishy="true"/>
+        <breakpoint uid="U342351" maxwidth="1920" minwidth="801" squishy="true"/>
+      </page>
+    </rendition>
+  </renditions>
+</manifest>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="ru-RU">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="description" content="Исследование операций. Методы оптимальных решений."/>
+  <meta name="keywords" content="Исследование операций, Операция, Решение, Метод, Оптимальное"/>
+  <meta name="generator" content="2017.0.3.363"/>
+  <meta property="og:title" content="Исследование операций"/><!-- custom meta -->
+  <meta property="og:type" content="website"/><!-- custom meta -->
+  <meta property="og:url" content="https://system-laboratory.ru/operation.html"/><!-- custom meta -->
+  <meta property="og:image" content="https://system-laboratory.ru/assets/image_37.jpg"/><!-- custom meta -->
+  <meta property="og:description" content="Исследование операций - научное направление, которое занимается разработкой и применением методов оптимизации на основе математического моделирования и различных эвристических подходов."/><!-- custom meta -->
+  <meta property="og:site_name" content="Лаборатория системного анализа"/><!-- custom meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "webpro.js", "musewpdisclosure.js", "jquery.museresponsive.js", "require.js", "jquery.musepolyfill.bgsize.js", "operation.css"], "outOfDate":[]};
+</script>
+  
+  <link rel="shortcut icon" href="images/favicon.ico?crc=217876451"/>
+  <title>Исследование операций — Лаборатория системного анализа</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=3895645853"/>
+  <link rel="stylesheet" type="text/css" href="css/master_______-_3.css?crc=277714323"/>
+  <link rel="stylesheet" type="text/css" href="css/operation.css?crc=504214894" id="pagesheet"/>
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_operation.css?crc=253168516"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_______-_3.css?crc=518342793"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_operation.css?crc=311398813" id="nomq_pagesheet"/>
+  <![endif]-->
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script src="https://webfonts.creativecloud.com/pt-sans:n7,n4,i4:all.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+    <!--custom head HTML-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102547958-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45293388 = new Ya.Metrika({
+                    id:45293388,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45293388" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "WebSite",
+  "name": "Лаборатория системного анализа",
+  "url": "https://system-laboratory.ru/"
+}
+ </script>
+
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "WebSite",
+  "name": "Лаборатория системного анализа",
+  "url": "https://system-laboratory.ru/"
+}
+ </script>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Лаборатория системного анализа",
+  "url" : "https://system-laboratory.ru",
+  "sameAs" : [
+    "https://vk.com/syslabru",
+    "https://plus.google.com/115577333916113508924",
+    "https://www.facebook.com/systemlabspb",
+    "https://twitter.com/SystemlabRu",
+    "http://youtube.com/channel/UCl9Ov3q21FTp_EdjvkcYeYw",
+    "https://system-laboratory.blogspot.com",
+    "https://system-laboratory.tumblr.com",
+    "https://www.linkedin.com/company/system-lab",
+    "https://www.ok.ru/group/58460052914213",
+    "http://systems-analysis.ru/"
+  ]
+}
+</script>
+
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Лаборатория системного анализа",
+  "url": "https://system-laboratory.ru",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Свеаборгская, д. 13. Помещение 2Н, Офис 1А",
+    "addressLocality": "Санкт-Петербург",
+    "addressRegion": "196105",
+    "addressCountry": "Россия"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+7-952-268-6640",
+    "contactType": "customer service",
+    "email": "info@system-laboratory.ru"
+  }
+}
+ </script>
+
+<script type='application/ld+json'> 
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://system-laboratory.ru/",
+  "logo": "https://system-laboratory.ru/assets/logo_b.jpg"
+}
+</script>
+
+<html lang="ru" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!-- Schema.org data | Generated by SeoLik.ru -->
+<meta itemprop="name"  content="Исследование операций">
+<meta itemprop="description" name="description" content="Исследование операций - научное направление, которое занимается разработкой и применением методов оптимизации на основе математического моделирования и различных эвристических подходов.">
+<meta itemprop="image" name="image" content="https://system-laboratory.ru/assets/image_37.jpg">
+
+<!-- Twitter Card data | Generated by SeoLik.ru -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SystemlabRu">
+<meta name="twitter:title" content="Исследование операций">
+<meta name="twitter:description" content="Исследование операций - научное направление, которое занимается разработкой и применением методов оптимизации на основе математического моделирования и различных эвристических подходов.">
+<meta name="twitter:creator" content="@SystemlabRu">
+<meta name="twitter:image" content="https://system-laboratory.ru/assets/image_37.jpg">
+
+<!-- Open Graph data | Generated by SeoLik.ru -->
+<meta property="og:locale" content="ru_RU">
+<!-- Image for Social | Generated by SeoLik.ru -->
+<link rel="image_src" href="https://system-laboratory.ru/assets/image_37.jpg">
+  <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1441"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox" id="page"><!-- column -->
+    <div class="position_content" id="page_position_content">
+     <div class="browser_width" id="u298261-4-bw">
+      <div class="clearfix pinned-colelem" id="u298261-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span class="actAsDiv normal_text" id="u298262"><!-- content --><span class="MenuBar actAsDiv clearfix" id="menuu298263"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u298278"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u298279" href="company.html" data-href="page:U105"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u298282-4"><!-- content --><span class="actAsPara shared_content" id="u298282-2" data-content-guid="u298282-2_content"><span id="u298282">КОМПАНИЯ</span></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u298285"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u298286" href="services.html" data-href="page:U117"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u298288-4"><!-- content --><span class="actAsPara shared_content" id="u298288-2" data-content-guid="u298288-2_content"><span id="u298288">УСЛУГИ</span></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u298271"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u298274" href="methods.html" data-href="page:U129"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u298276-4"><!-- content --><span class="actAsPara shared_content" id="u298276-2" data-content-guid="u298276-2_content"><span id="u298276">МЕТОДЫ</span></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u298264"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u298265" href="contact.html" data-href="page:U141"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u298266-4"><!-- content --><span class="actAsPara shared_content" id="u298266-2" data-content-guid="u298266-2_content"><span id="u298266">КОНТАКТЫ</span></span></span></a></span></span></span><span class="shared_content" data-content-guid="u298261-4_0_1_content"></span></p>
+      </div>
+     </div>
+     <div class="clearfix colelem shared_content" id="pbuttonu205299" data-content-guid="pbuttonu205299_content"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U205299" template="operation.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" -->
+      <a class="nonblock nontext Button ButtonSelected clearfix grpelem" id="buttonu205299" href="operation.html" data-href="page:U21936" data-muse-uid="U205299"><!-- container box --><div class="museBGSize colelem" id="u205300"><!-- simple frame --></div><!-- m_editable region-id="editable-static-tag-U205301-BP_infinity" template="operation.html" data-type="html" data-ice-options="disableImageResize,link" --><div class="clearfix colelem" id="u205301-4" data-muse-uid="U205301" data-muse-type="txt_frame"><!-- content --><h2>Исследование операций</h2></div><!-- /m_editable --></a>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U205302" template="operation.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" -->
+      <a class="nonblock nontext Button clearfix grpelem" id="buttonu205302" href="system.html" data-href="page:U22032" data-muse-uid="U205302"><!-- container box --><div class="museBGSize colelem" id="u205303"><!-- simple frame --></div><!-- m_editable region-id="editable-static-tag-U205304-BP_infinity" template="operation.html" data-type="html" data-ice-options="disableImageResize,link" --><div class="clearfix colelem" id="u205304-4" data-muse-uid="U205304" data-muse-type="txt_frame"><!-- content --><p>Системный анализ</p></div><!-- /m_editable --></a>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U205305" template="operation.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" -->
+      <a class="nonblock nontext Button clearfix grpelem" id="buttonu205305" href="statistical_method.html" data-href="page:U21984" data-muse-uid="U205305"><!-- container box --><div class="museBGSize colelem" id="u205306"><!-- simple frame --></div><!-- m_editable region-id="editable-static-tag-U205307-BP_infinity" template="operation.html" data-type="html" data-ice-options="disableImageResize,link" --><div class="clearfix colelem" id="u205307-4" data-muse-uid="U205307" data-muse-type="txt_frame"><!-- content --><p>Статистические методы</p></div><!-- /m_editable --></a>
+      <!-- /m_editable -->
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U205296-BP_infinity" template="operation.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="clearfix colelem shared_content" id="u205296-84" data-muse-uid="U205296" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" data-content-guid="u205296-84_content"><!-- content -->
+      <h1 id="u205296-2">Исследование операций</h1>
+      <p id="u205296-3">&nbsp;</p>
+      <p id="u205296-4">&nbsp;</p>
+      <p id="u205296-6">Что это такое</p>
+      <p id="u205296-8">Исследование операций - научное направление, которое занимается разработкой и применением методов оптимизации на основе математического моделирования и различных эвристических подходов.</p>
+      <p id="u205296-10">Исследование операций как самостоятельное научное направление возникло в годы второй мировой войны из потребностей наилучшей организации боевых действий, а также прогнозирования их исхода при принятии командованием различных решений. С помощью методов исследования операций можно планировать стратегические и тактические военные операции, в частности, в условиях неполного знания о противнике.</p>
+      <p id="u205296-12">Первоначально исследование операций было определено как научный метод, дающий в распоряжение руководителя количественные основания для принятия решений, связанных с деятельностью подчиненных организаций. Подчеркивалось, что речь идет о прикладной науке, применяющей достижения других наук для анализа специфических проблем совершенствования руководства.</p>
+      <p id="u205296-14">С течением времени круг интересов исследователей операций значительно расширился и охватывает сегодня области организационного управления, экономики, энергетики, освоения природных ресурсов. Важное место отводится изучению проблем автоматизации производства и управления различными видами деятельности.</p>
+      <p id="u205296-16">Методы исследования операций применяются в тех случаях, когда требуется организовать какое-то целенаправленное мероприятие, которое можно организовать тем или другим способом и выбрать некоторое решение из ряда возможных вариантов. Причем каждый из вариантов обладает определенными преимуществами и недостатками, а в силу сложившийся ситуации, сразу не ясно, какой из вариантов предпочтительнее и почему.</p>
+      <p id="u205296-18">Цель исследования операций — предварительное количественное обоснование оптимальных решений с опорой на показатель эффективности. Само принятие решения выходит за рамки исследования операций и относится к компетенции ответственного лица или группы лиц принимающих решение.</p>
+      <p id="u205296-20">Методы исследования операций эффективны в отношении хорошо структурированных проблем. Эти проблемы допускают количественную формулировку, их наиболее существенные зависимости выражаются объективными моделями. Методология исследования операций помимо расчётов, уделяет внимание процессу постановки задачи, выбору математических моделей, интерпретации и осмыслению результатов расчёта.</p>
+      <p id="u205296-21">&nbsp;</p>
+      <p id="u205296-22">&nbsp;</p>
+      <h2 id="u205296-24">Операция</h2>
+      <p id="u205296-26">Термин «операция» является ключевым в дисциплине Исследование операций, о чем и говорит её название. Однако, в рамках дисциплины, термин несет строго определенный смысл. Поскольку изначально исследование операций, формировалось для обоснования решений военного управления, то этот термин ближе к термину «военная операция».</p>
+      <p id="u205296-28">Операция — мероприятие, объединенное единым замыслом и направленное к достижению поставленной цели. (Вентцель Е. С.)</p>
+      <p id="u205296-30">Операция носит деятельностный характер, базируется на трёх составляющих: цель, средства и объект деятельности (то, на что направлена деятельность). Она может быть представлена, как система действий или целенаправленная система. Замысел, подразумевает наличие определенного плана и усилий по его разработке. Операцией называется совокупность согласованных действий, направленных на достижение вполне определенной цели. До тех пор, пока цель не определена, нет смысла говорить об операции. Если же цель определена и существуют разные пути ее достижения, то желательно найти лучший из них, добиваясь надлежащей согласованности предпринимаемых действий.</p>
+      <p id="u205296-32">Операция всегда управляемое мероприятие, от некоторого лица, принимающего решение (ЛПР) зависит, каким способом выбрать те или иные параметры операции, а выбор этих параметров влияет на достижение цели. Конкретный выбор зависящих от ЛПР параметров является решением. Оптимальным будет то решение, которое по тем или иным признакам предпочтительнее других. Методы исследования операций предназначены для качественного и количественного обоснования оптимальных решений.</p>
+      <p id="u205296-34"><span id="u205296-33">Каждая операция продумывается, планируется заранее, предполагается к осуществлению в каких-то условиях. Однако, как правило, не все условия, в которых будет выполняться операция и которых зависит ее успех, полностью известны заранее. Некоторые из них содержат элемент неопределенности, случайности.</span></p>
+      <p id="u205296-35">&nbsp;</p>
+      <p id="u205296-36">&nbsp;</p>
+      <h2 id="u205296-38">Моделирование и оптимальные решения</h2>
+      <p id="u205296-40">Из-за роста масштабов и сложности операций часто приходится сталкиваться с задачами оптимального управления «сложными системами», включающими большое число элементов и подсистем и организованных по иерархическому принципу. Исследование операций тесно связано с системным подходом и теорией принятия решений.</p>
+      <p id="u205296-42">Из всех возможных способов организации операции выделяется тот или те, которые оказываются по тем или иным соображениям более выгодными.&nbsp; Под эффективностью операции подразумевают степень ее приспособленности к достижению цели. Чем лучше организована операция, тем она эффективнее. Чтобы судить об эффективности операции, нужно иметь некоторый численный критерий, который называют показателем эффективности или целевой функцией. Конкретный вид показателя эффективности всегда выбирается в зависимости от задачи, стоящей перед операцией.</p>
+      <p id="u205296-44">Модель — это материальный или абстрактный объект, который в процессе изучения замещает объект-оригинал (явление), сохраняя для данного исследователя некоторые важные для данного исследователя типичные его черты.</p>
+      <p id="u205296-46">В исследовании операций модели играют исключительно важную роль. Модели позволяют получать ясные и компактные описания отображаемых ими систем, вскрывая механизм и&nbsp; работы. Анализируя модели и экспериментируя на них, обычно удается определить, как влияют изменения в рассматриваемой системе на качество ее функционирования. Эти методы часто исключают необходимость проведения эксперимента на самой системе. Осуществление натурных экспериментов на системах, рассматриваемых в исследовании операций, либо вообще невозможно, либо сопряжено со слишком большими затратами. Даже тогда, когда такие эксперименты допустимы, использование моделей обеспечивает разработку наиболее эффективных методов их проведения.</p>
+      <p id="u205296-48"><span id="u205296-47">Оптимизационные модели ориентированы на решение конкретных задач. В общем случае, необходимо ответить на вопросы:</span></p>
+      <ol class="list0 nls-None" id="u205296-55">
+       <li id="u205296-50"><span id="u205296-49">Что в конкретном случае считать альтернативными решениями?</span></li>
+       <li id="u205296-52"><span id="u205296-51">По какому критерию отбираются альтернативные решения?</span></li>
+       <li id="u205296-54"><span id="u205296-53">Каким ограничениям удовлетворяют возможные решения?</span></li>
+      </ol>
+      <p id="u205296-57">Задача формулируется в виде математической модели. Моделирование начинается с определения альтернатив решения. Типовая математическая модель ИО представлена в следующей формулировке:</p>
+      <p id="u205296-58">&nbsp;</p>
+      <p id="u205296-59">&nbsp;</p>
+      <p id="u205296-61">Максимизация или минимизация целевой функции</p>
+      <p id="u205296-63">При условии выполнения ограничений</p>
+      <p id="u205296-64">&nbsp;</p>
+      <p id="u205296-65">&nbsp;</p>
+      <p id="u205296-67">Допустимое решение — если оно удовлетворяет всем ограничениям модели. Допустимых решений в отдельных случаях может быть бесконечное множество.</p>
+      <p id="u205296-69">Оптимальное решение — если кроме того, что оно допустимо, целевая функция в этом решении достигает максимального или минимального значения.</p>
+      <p id="u205296-71">Оптимальными называются решения которые по тем или другим признакам предпочтительнее других. Каждый выбор лучшего варианта конкретен, поскольку основан на соответствии установленным критериям. Говоря об оптимальном варианте, указывают эти критерии («оптимальный по…»). То, что оптимально при одном критерии, не обязательно будет таковым при другом.</p>
+      <p id="u205296-73">Когда речь идет о крупномасштабных, сложных операциях, затрагивающих разнообразные интересы, использующих большое количество ресурсов, то эффективность невозможно однозначно охарактеризовать с помощью одного-единственного показателя эффективности. Приходится привлекать дополнительные показатели. Такие задачи называют многокритериальными. В таких случаях говорят об оптимизации по многим критериям.</p>
+      <p id="u205296-75">В исследовании операций нет единого метода решения всех математических моделей. Большое количество методов исследования операций порождают итерационные вычислительные алгоритмы. Это означает, что задача решается последовательно, когда на каждом шаге получаем решение, постепенно сводящееся к оптимальному. Итерационная природа алгоритмов приводит к объемным однотипным вычислениям. Эти алгоритмы разрабатываются для реализации с помощью вычислительной техники. Некоторые математические модели настолько сложные, что их невозможно решить никакими доступными методами. В этом случае остается только эвристический подход, то есть способ решения задачи, включающий практический метод, не являющийся гарантированно точным или оптимальным, но достаточный для решения поставленной задачи. Он ускоряет решение задачи в тех случаях, когда точное решение не может быть найдено.</p>
+      <p id="u205296-76">&nbsp;</p>
+      <p class="ts4" id="u205296-79"><a class="nonblock" href="http://systems-analysis.ru/operation_reserch.html" target="_blank"><span id="u205296-77">Исследование операций. Подробнее.</span></a></p>
+      <p class="ts4" id="u205296-80">&nbsp;</p>
+      <p class="ts4" id="u205296-81">&nbsp;</p>
+      <p class="ts4" id="u205296-82">&nbsp;</p>
+     </div>
+     <!-- /m_editable -->
+     <div class="verticalspacer" data-offset-top="3136" data-content-above-spacer="3136" data-content-below-spacer="0"></div>
+     <div class="browser_width colelem" id="u266614-4-bw">
+      <div class="clearfix" id="u266614-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span class="actAsDiv normal_text" id="u266652"><!-- content --><span class="actAsDiv clearfix" id="u266653-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u266653-2">© Лаборатория системного анализа 2018</span></span></span><span class="actAsDiv normal_text" id="u266615"><!-- content --><span class="MenuBar actAsDiv clearfix" id="menuu266616"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266617"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266620" href="index.html" data-href="page:U93"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266621-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Главная</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266624"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266627" href="company.html" data-href="page:U105"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266628-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Компания</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266631"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266632" href="services.html" data-href="page:U117"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266635-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Услуги</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266638"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266641" href="methods.html" data-href="page:U129"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266642-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Методы</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266645"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266646" href="contact.html" data-href="page:U141"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266649-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Контакты</span></span></a></span></span></span><span></span></p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_1440" data-min-width="961" data-max-width="1440"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width colelem temp_no_id" data-orig-id="u298261-4-bw">
+      <div class="clearfix temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u298261-4"><!-- content -->
+       <p><span class="actAsDiv normal_text temp_no_id" data-orig-id="u298262"><!-- content --><span class="MenuBar actAsDiv clearfix temp_no_id" data-orig-id="menuu298263"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298278"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="company.html" data-href="page:U105" data-orig-id="u298279"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298282-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298282-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298285"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="services.html" data-href="page:U117" data-orig-id="u298286"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298288-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298288-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298271"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="methods.html" data-href="page:U129" data-orig-id="u298274"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298276-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298276-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298264"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="contact.html" data-href="page:U141" data-orig-id="u298265"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298266-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298266-2_content"><!-- placeholder node --></span></span></a></span></span></span><span class="placeholder" data-placeholder-for="u298261-4_0_1_content"><!-- placeholder node --></span></p>
+      </div>
+     </div>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pbuttonu205299_content"><!-- placeholder node --></span>
+     <!-- m_editable region-id="editable-static-tag-U205296-BP_1440" template="operation.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="u205296-84_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+     <div class="verticalspacer" data-offset-top="3172" data-content-above-spacer="3172" data-content-below-spacer="0"></div>
+     <div class="browser_width colelem" id="u265546-4-bw">
+      <div class="clearfix" id="u265546-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span class="actAsDiv normal_text" id="u265584"><!-- content --><span class="actAsDiv clearfix" id="u265585-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u265585-2">© Лаборатория системного анализа 2018</span></span></span><span class="actAsDiv normal_text" id="u265547"><!-- content --><span class="MenuBar actAsDiv clearfix" id="menuu265548"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u265549"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u265550" href="index.html" data-href="page:U93"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u265553-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Главная</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u265563"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u265566" href="company.html" data-href="page:U105"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u265569-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Компания</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u265570"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u265573" href="services.html" data-href="page:U117"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u265576-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Услуги</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u265577"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u265578" href="methods.html" data-href="page:U129"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u265581-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Методы</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u265556"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u265559" href="contact.html" data-href="page:U141"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u265562-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Контакты</span></span></a></span></span></span><span></span></p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_960" data-min-width="801" data-max-width="960"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width temp_no_id" data-orig-id="u298261-4-bw">
+      <div class="clearfix pinned-colelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u298261-4"><!-- content -->
+       <p><span class="actAsDiv normal_text temp_no_id" data-orig-id="u298262"><!-- content --><span class="MenuBar actAsDiv clearfix temp_no_id" data-orig-id="menuu298263"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298278"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="company.html" data-href="page:U105" data-orig-id="u298279"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298282-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298282-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298285"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="services.html" data-href="page:U117" data-orig-id="u298286"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298288-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298288-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298271"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="methods.html" data-href="page:U129" data-orig-id="u298274"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298276-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298276-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298264"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="contact.html" data-href="page:U141" data-orig-id="u298265"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298266-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298266-2_content"><!-- placeholder node --></span></span></a></span></span></span><span class="placeholder" data-placeholder-for="u298261-4_0_1_content"><!-- placeholder node --></span></p>
+      </div>
+     </div>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pbuttonu205299_content"><!-- placeholder node --></span>
+     <!-- m_editable region-id="editable-static-tag-U205296-BP_960" template="operation.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="u205296-84_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+     <div class="verticalspacer" data-offset-top="3376" data-content-above-spacer="3376" data-content-below-spacer="0"></div>
+     <div class="browser_width colelem" id="u266071-4-bw">
+      <div class="clearfix" id="u266071-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span class="actAsDiv normal_text" id="u266109"><!-- content --><span class="actAsDiv clearfix" id="u266110-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u266110-2">© Лаборатория системного анализа 2018</span></span></span><span class="actAsDiv normal_text" id="u266072"><!-- content --><span class="MenuBar actAsDiv clearfix" id="menuu266073"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266074"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266077" href="index.html" data-href="page:U93"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266080-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Главная</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266088"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266091" href="company.html" data-href="page:U105"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266093-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Компания</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266081"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266084" href="services.html" data-href="page:U117"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266085-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Услуги</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266095"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266098" href="methods.html" data-href="page:U129"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266099-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Методы</span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u266102"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u266105" href="contact.html" data-href="page:U141"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u266107-4" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara">Контакты</span></span></a></span></span></span><span></span></p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_800" data-min-width="641" data-max-width="800"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width temp_no_id" data-orig-id="u298261-4-bw">
+      <div class="clearfix pinned-colelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u298261-4"><!-- content -->
+       <p><span class="actAsDiv normal_text temp_no_id" data-orig-id="u298262"><!-- content --><span class="MenuBar actAsDiv clearfix temp_no_id" data-orig-id="menuu298263"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298278"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="company.html" data-href="page:U105" data-orig-id="u298279"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298282-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298282-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298285"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="services.html" data-href="page:U117" data-orig-id="u298286"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298288-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298288-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298271"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="methods.html" data-href="page:U129" data-orig-id="u298274"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298276-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298276-2_content"><!-- placeholder node --></span></span></a></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298264"><!-- vertical box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="contact.html" data-href="page:U141" data-orig-id="u298265"><!-- horizontal box --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u298266-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u298266-2_content"><!-- placeholder node --></span></span></a></span></span></span><span class="placeholder" data-placeholder-for="u298261-4_0_1_content"><!-- placeholder node --></span></p>
+      </div>
+     </div>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pbuttonu205299_content"><!-- placeholder node --></span>
+     <div class="browser_width colelem" id="u205296-84-bw">
+      <!-- m_editable region-id="editable-static-tag-U205296-BP_800" template="operation.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <span class="clearfix placeholder" data-placeholder-for="u205296-84_content"><!-- placeholder node --></span>
+      <!-- /m_editable -->
+     </div>
+     <div class="verticalspacer" data-offset-top="3158" data-content-above-spacer="3158" data-content-below-spacer="0"></div>
+     <div class="browser_width colelem shared_content" id="u266596-4-bw" data-content-guid="u266596-4-bw_content">
+      <div class="clearfix" id="u266596-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p id="u266596-2">© Лаборатория системного анализа 2018</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_640" data-min-width="481" data-max-width="640"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="clearfix colelem" id="paccordionu2424"><!-- group -->
+      <div class="browser_width grpelem" id="accordionu2424-bw">
+       <ul class="AccordionWidget clearfix" id="accordionu2424"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100" id="u2433"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100" id="u2434-3" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u2434-3_0_content">&nbsp;</p></div><div class="AccordionPanelContent disn clearfix colelem100" id="u2435"><!-- group --><nav class="MenuBar clearfix grpelem" id="menuu2888"><!-- vertical box --><div class="MenuItemContainer clearfix colelem" id="u202143"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u202144" href="index.html" data-href="page:U93"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u202146-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u202146-4_0_content">Главная</p></div></a></div><div class="MenuItemContainer clearfix colelem" id="u2889"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u2890" href="company.html" data-href="page:U105"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u2892-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u2892-4_0_content">Компания</p></div></a></div><div class="MenuItemContainer clearfix colelem" id="u2963"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u2964" href="services.html" data-href="page:U117"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u2967-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u2967-4_0_content">Услуги</p></div></a></div><div class="MenuItemContainer clearfix colelem" id="u3023"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u3024" href="methods.html" data-href="page:U129"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u3027-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u3027-4_0_content">Методы</p></div></a></div><div class="MenuItemContainer clearfix colelem" id="u3079"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u3082" href="contact.html" data-href="page:U141"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u3084-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u3084-4_0_content">Контакты</p></div></a></div></nav></div></li>
+       </ul>
+      </div>
+      <div class="grpelem shared_content" id="u273267" data-content-guid="u273267_content"><!-- simple frame --></div>
+     </div>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pbuttonu205299_content"><!-- placeholder node --></span>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u205296-84-bw">
+      <!-- m_editable region-id="editable-static-tag-U205296-BP_640" template="operation.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <span class="clearfix placeholder" data-placeholder-for="u205296-84_content"><!-- placeholder node --></span>
+      <!-- /m_editable -->
+     </div>
+     <div class="verticalspacer" data-offset-top="3590" data-content-above-spacer="3590" data-content-below-spacer="0"></div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u266596-4-bw_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_480" data-min-width="321" data-max-width="480"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="clearfix colelem temp_no_id" data-orig-id="paccordionu2424"><!-- group -->
+      <div class="browser_width grpelem temp_no_id" data-orig-id="accordionu2424-bw">
+       <ul class="AccordionWidget clearfix temp_no_id" data-orig-id="accordionu2424"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100 temp_no_id" data-orig-id="u2433"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100 temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u2434-3"><!-- content --><span class="placeholder" data-placeholder-for="u2434-3_0_content"><!-- placeholder node --></span></div><div class="AccordionPanelContent disn clearfix colelem100 temp_no_id" data-orig-id="u2435"><!-- group --><nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu2888"><!-- vertical box --><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u202143"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="index.html" data-href="page:U93" data-orig-id="u202144"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u202146-4"><!-- content --><span class="placeholder" data-placeholder-for="u202146-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u2889"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="company.html" data-href="page:U105" data-orig-id="u2890"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u2892-4"><!-- content --><span class="placeholder" data-placeholder-for="u2892-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u2963"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="services.html" data-href="page:U117" data-orig-id="u2964"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u2967-4"><!-- content --><span class="placeholder" data-placeholder-for="u2967-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u3023"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="methods.html" data-href="page:U129" data-orig-id="u3024"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u3027-4"><!-- content --><span class="placeholder" data-placeholder-for="u3027-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u3079"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="contact.html" data-href="page:U141" data-orig-id="u3082"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u3084-4"><!-- content --><span class="placeholder" data-placeholder-for="u3084-4_0_content"><!-- placeholder node --></span></div></a></div></nav></div></li>
+       </ul>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u273267_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem shared_content" id="pbuttonu222712" data-content-guid="pbuttonu222712_content"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U222712" template="operation.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" -->
+      <a class="nonblock nontext Button ButtonSelected clearfix grpelem" id="buttonu222712" href="operation.html" data-href="page:U21936" data-muse-uid="U222712"><!-- container box --><div class="museBGSize colelem" id="u222714"><!-- simple frame --></div><!-- m_editable region-id="editable-static-tag-U222713-BP_480" template="operation.html" data-type="html" data-ice-options="disableImageResize,link" --><div class="clearfix colelem" id="u222713-6" data-muse-uid="U222713" data-muse-type="txt_frame"><!-- content --><h2>Исследование</h2><h2>операций</h2></div><!-- /m_editable --></a>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U222715" template="operation.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" -->
+      <a class="nonblock nontext Button clearfix grpelem" id="buttonu222715" href="system.html" data-href="page:U22032" data-muse-uid="U222715"><!-- container box --><div class="museBGSize colelem" id="u222717"><!-- simple frame --></div><!-- m_editable region-id="editable-static-tag-U222716-BP_480" template="operation.html" data-type="html" data-ice-options="disableImageResize,link" --><div class="clearfix colelem" id="u222716-6" data-muse-uid="U222716" data-muse-type="txt_frame"><!-- content --><p>Системный</p><p>анализ</p></div><!-- /m_editable --></a>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U222718" template="operation.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" -->
+      <a class="nonblock nontext Button clearfix grpelem" id="buttonu222718" href="statistical_method.html" data-href="page:U21984" data-muse-uid="U222718"><!-- container box --><div class="museBGSize colelem" id="u222719"><!-- simple frame --></div><!-- m_editable region-id="editable-static-tag-U222720-BP_480" template="operation.html" data-type="html" data-ice-options="disableImageResize,link" --><div class="clearfix colelem" id="u222720-6" data-muse-uid="U222720" data-muse-type="txt_frame"><!-- content --><p>Статистические</p><p>методы</p></div><!-- /m_editable --></a>
+      <!-- /m_editable -->
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U205296-BP_480" template="operation.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="u205296-84_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+     <div class="verticalspacer" data-offset-top="3819" data-content-above-spacer="3819" data-content-below-spacer="0"></div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u266596-4-bw_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_320" data-max-width="320"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="clearfix colelem temp_no_id" data-orig-id="paccordionu2424"><!-- group -->
+      <div class="browser_width grpelem temp_no_id" data-orig-id="accordionu2424-bw">
+       <ul class="AccordionWidget clearfix temp_no_id" data-orig-id="accordionu2424"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100 temp_no_id" data-orig-id="u2433"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100 temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u2434-3"><!-- content --><span class="placeholder" data-placeholder-for="u2434-3_0_content"><!-- placeholder node --></span></div><div class="AccordionPanelContent disn clearfix colelem100 temp_no_id" data-orig-id="u2435"><!-- group --><nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu2888"><!-- vertical box --><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u202143"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="index.html" data-href="page:U93" data-orig-id="u202144"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u202146-4"><!-- content --><span class="placeholder" data-placeholder-for="u202146-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u2889"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="company.html" data-href="page:U105" data-orig-id="u2890"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u2892-4"><!-- content --><span class="placeholder" data-placeholder-for="u2892-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u2963"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="services.html" data-href="page:U117" data-orig-id="u2964"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u2967-4"><!-- content --><span class="placeholder" data-placeholder-for="u2967-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u3023"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="methods.html" data-href="page:U129" data-orig-id="u3024"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u3027-4"><!-- content --><span class="placeholder" data-placeholder-for="u3027-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u3079"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="contact.html" data-href="page:U141" data-orig-id="u3082"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u3084-4"><!-- content --><span class="placeholder" data-placeholder-for="u3084-4_0_content"><!-- placeholder node --></span></div></a></div></nav></div></li>
+       </ul>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u273267_content"><!-- placeholder node --></span>
+     </div>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pbuttonu222712_content"><!-- placeholder node --></span>
+     <!-- m_editable region-id="editable-static-tag-U205296-BP_320" template="operation.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="u205296-84_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+     <div class="verticalspacer" data-offset-top="4863" data-content-above-spacer="4863" data-content-below-spacer="0"></div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u266596-4-bw_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide weather to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.musepolyfill.bgsize","jquery.watch","webpro","musewpdisclosure","jquery.museresponsive"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.detectScreenResolution();/* HiDPI screens */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_1440', '#bp_960', '#bp_800', '#bp_640', '#bp_480', '#bp_320'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('#accordionu2424', ['#bp_640', '#bp_480', '#bp_320'], function(elem) { return new WebPro.Widget.Accordion(elem, {canCloseAll:true,defaultIndex:-1}); });/* #accordionu2424 */
+$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=85721165" type="text/javascript" async data-main="scripts/museconfig.js?crc=436936948" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   </body>
+</html>

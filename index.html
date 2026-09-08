@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="ru-RU">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="description" content="Лаборатория системного анализа. Моделирование. Оптимизация. Исследования. Моделирование. Статистика. Анализ данных. Промышленность. Аналитика"/>
+  <meta name="keywords" content="Лаборатория системного анализа, системный, исследование операций, моделирование, оптимизация, исследования, промышленных, статистика, анализ данных"/>
+  <meta name="generator" content="2017.0.3.363"/>
+  <meta name="google-site-verification" content="Ti4t63EzT_itIITruKP52H2udtqM5NWooDPWEtiQoIY"/><!-- custom meta -->
+  <meta property="og:title" content="Лаборатория системного анализа"/><!-- custom meta -->
+  <meta property="og:type" content="website"/><!-- custom meta -->
+  <meta property="og:url" content="https://system-laboratory.ru"/><!-- custom meta -->
+  <meta property="og:image" content="https://system-laboratory.ru/assets/image_41.jpg"/><!-- custom meta -->
+  <meta property="og:description" content="Лаборатория системного анализа. Разрабатываем способы оптимизации производства. Проводим исследования и анализ для решения промышленных проблем"/><!-- custom meta -->
+  <meta property="og:site_name" content="Лаборатория системного анализа"/><!-- custom meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.musemenu.js", "jquery.watch.js", "musewpdisclosure.js", "jquery.museresponsive.js", "require.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <link rel="shortcut icon" href="images/favicon.ico?crc=217876451"/>
+  <title>Лаборатория системного анализа</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=3895645853"/>
+  <link rel="stylesheet" type="text/css" href="css/master_______-_11.css?crc=114756128"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=3967552006" id="pagesheet"/>
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_______-_11.css?crc=3904085577"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=530025873" id="nomq_pagesheet"/>
+  <![endif]-->
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script src="https://webfonts.creativecloud.com/pt-sans:n4:all.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+    <!--custom head HTML-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102547958-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45293388 = new Ya.Metrika({
+                    id:45293388,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45293388" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<meta name="DC.Title" content="Лаборатория системного анализа. Сайт компании">
+<meta name="DC.Creator" content="Лаборатория системного анализа.">
+<meta name="DC.Subject" content="Системный анализ. Исследование операций. Теория принятия решений. Моделирование. Системная инженерия.">
+<meta name="DC.Description" content="Системный анализ. Исследование операций. Теория принятия решений. Моделирование. Системная инженерия.">
+<meta name="DC.Publisher" content="Лаборатория системного анализа">
+<meta name="DC.Contributor" content="Лаборатория системного анализа">
+<meta name="DC.Date" content="2017-09-09">
+<meta name="DC.Type" content="Сайт компании">
+<meta name="DC.Format" content="MIME тип">
+<meta name="DC.Identifier" content="https://system-laboratory.ru/">
+<meta name="DC.Source" content="https://system-laboratory.ru/">
+<meta name="DC.Language" content="RU"><meta name="DC.Relation" content="https://system-laboratory.ru/">
+<meta name="DC.Coverage" content="Системный анализ. Исследование операций. Теория принятия решений. Моделирование. Системная инженерия.">
+<meta name="DC.Rights" content="Лаборатория системного анализа">
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "WebSite",
+  "name": "Лаборатория системного анализа",
+  "url": "https://system-laboratory.ru/"
+}
+ </script>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Лаборатория системного анализа",
+  "url" : "https://system-laboratory.ru",
+  "sameAs" : [
+    "https://vk.com/syslabru",
+    "https://plus.google.com/115577333916113508924",
+    "https://www.facebook.com/systemlabspb",
+    "https://twitter.com/SystemlabRu",
+    "http://youtube.com/channel/UCl9Ov3q21FTp_EdjvkcYeYw",
+    "https://system-laboratory.blogspot.com",
+    "https://system-laboratory.tumblr.com",
+    "https://www.linkedin.com/company/system-lab",
+    "https://www.ok.ru/group/58460052914213",
+    "http://systems-analysis.ru/"
+  ]
+}
+</script>
+
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Лаборатория системного анализа",
+  "url": "https://system-laboratory.ru",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Свеаборгская, д. 13. Помещение 2Н, Офис 1А",
+    "addressLocality": "Санкт-Петербург",
+    "addressRegion": "196105",
+    "addressCountry": "Россия"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+7-952-268-6640",
+    "contactType": "customer service",
+    "email": "info@system-laboratory.ru"
+  }
+}
+
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://system-laboratory.ru/",
+  "logo": "https://system-laboratory.ru/assets/logo_b.jpg"
+}
+
+ </script>
+
+
+<html lang="ru" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!-- Schema.org data -->
+<meta itemprop="name"  content="Лаборатория системного анализа">
+<meta itemprop="description" name="description" content="Лаборатория системного анализа. Разрабатываем способы оптимизации производства. Проводим исследования и анализ для решения промышленных проблем">
+<meta itemprop="image" name="image" content="https://system-laboratory.ru/assets/image_41.jpg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SystemlabRu">
+<meta name="twitter:title" content="Лаборатория системного анализа">
+<meta name="twitter:description" content="Лаборатория системного анализа. Разрабатываем способы оптимизации производства. Проводим исследования и анализ для решения промышленных проблем">
+<meta name="twitter:creator" content="@SystemlabRu">
+<meta name="twitter:image" content="https://system-laboratory.ru/assets/image_41.jpg">
+
+<!-- Open Graph data -->
+<meta property="og:locale" content="ru_RU">
+<!-- Image for Social  -->
+<link rel="image_src" href="https://system-laboratory.ru/assets/image_41.jpg">
+  <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1441"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox" id="page"><!-- column -->
+    <div class="clearfix colelem" id="pslideshowu287041"><!-- group -->
+     <div class="SlideShowWidget clearfix HeroFillFrame grpelem" id="slideshowu287041"><!-- none box -->
+      &nbsp;
+      <div class="popup_anchor" id="u287060popup">
+       <div class="SlideShowContentPanel clearfix fullscreen" id="u287060"><!-- stack box -->
+        <!-- m_editable region-id="editable-static-tag-U287061-BP_infinity" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide clip_frame fullscreen" id="u287061" data-muse-uid="U287061" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u287061_img" data-src="images/sky.jpg?crc=3981842435" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа." data-width="1920" data-height="819" data-muse-src="images/sky.jpg?crc=3981842435"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U287404-BP_infinity" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u287404" data-muse-uid="U287404" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u287404_img" data-src="images/industry_1.jpg?crc=501094860" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа. Моделирование." data-width="1920" data-height="936" data-muse-src="images/industry_1.jpg?crc=501094860"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U287598-BP_infinity" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u287598" data-muse-uid="U287598" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u287598_img" data-src="images/factory1.jpg?crc=361656236" src="images/blank.gif?crc=4208392903" alt="" data-width="1920" data-height="920" data-muse-src="images/factory1.jpg?crc=361656236"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U287695-BP_infinity" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u287695" data-muse-uid="U287695" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u287695_img" data-src="images/comp1.jpg?crc=4039385855" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа.Разработка программного обеспечения. " data-width="1920" data-height="1104" data-muse-src="images/comp1.jpg?crc=4039385855"/>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+      <div class="popup_anchor" id="u287055popup">
+       <div class="SlideShowCaptionPanel clearfix" id="u287055"><!-- stack box -->
+        <!-- m_editable region-id="editable-static-tag-U287058-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption clearfix grpelem" id="u287058-13" data-muse-uid="U287058" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u287058-3"><span id="u287058">System </span><span id="u287058-2">Lab</span></p>
+         <p id="u287058-5">Лаборатория системного анализа</p>
+         <p id="u287058-7">Исследования и моделирование</p>
+         <p id="u287058-9">Статистика и анализ данных</p>
+         <p id="u287058-11">Системы поддержки принятия решений</p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U287458-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u287458-6" data-muse-uid="U287458" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u287458-4"><span id="u287458">​</span><span id="u287458-2"><span class="actAsInlineDiv normal_text" id="u289254"><!-- content --><!-- m_editable region-id="editable-static-tag-U289240-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u289240-8" data-muse-uid="U289240" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u289240-2">Моделирование</span><span class="actAsPara" id="u289240-4">Оптимизация производства с помощью</span><span class="actAsPara" id="u289240-6">математических моделей</span></span><!-- /m_editable --></span></span><span id="u287458-3"></span></p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U287652-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u287652-6" data-muse-uid="U287652" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u287652-4"><span id="u287652">​</span><span id="u287652-2"><span class="actAsInlineDiv normal_text" id="u289398"><!-- content --><!-- m_editable region-id="editable-static-tag-U289384-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u289384-8" data-muse-uid="U289384" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u289384-2">Исследования</span><span class="actAsPara" id="u289384-4">Операционные исследования и</span><span class="actAsPara" id="u289384-6">системный анализ промышленных проблем</span></span><!-- /m_editable --></span></span><span id="u287652-3"></span></p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U287749-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u287749-6" data-muse-uid="U287749" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u287749-4"><span id="u287749">​</span><span id="u287749-2"><span class="actAsInlineDiv normal_text" id="u289542"><!-- content --><!-- m_editable region-id="editable-static-tag-U289528-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u289528-8" data-muse-uid="U289528" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u289528-2">Программное обеспечение</span><span class="actAsPara" id="u289528-4">Системы поддержки принятия решений</span><span class="actAsPara" id="u289528-6">в промышленности</span></span><!-- /m_editable --></span></span><span id="u287749-3"></span></p>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+      <div class="popup_anchor" id="u287047-6popup">
+       <!-- m_editable region-id="editable-static-tag-U287047-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+       <div class="SSPreviousButton clearfix" id="u287047-6" data-muse-uid="U287047" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p><span id="u287047">​</span><span id="u287047-2"><span class="actAsInlineDiv normal_text" id="u289197"><!-- content --><span class="actAsDiv museBGSize excludeFromNormalFlow" id="u289183"><!-- simple frame --></span></span></span><span id="u287047-3"></span></p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="popup_anchor" id="u287045-5popup">
+       <!-- m_editable region-id="editable-static-tag-U287045-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+       <div class="SSNextButton clearfix" id="u287045-5" data-muse-uid="U287045" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p><span id="u287045">​</span><span class="actAsInlineDiv normal_text" id="u289161"><!-- content --><span class="actAsDiv museBGSize excludeFromNormalFlow" id="u289147"><!-- simple frame --></span></span><span></span></p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="browser_width" id="u292851-4-bw">
+      <!-- m_editable region-id="editable-static-tag-U292851-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix" id="u292851-4" data-muse-uid="U292851" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span class="actAsDiv normal_text" id="u293098"><!-- content --><span class="MenuBar actAsDiv clearfix" id="menuu292866"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u292874"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292875" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u292875" href="company.html" data-href="page:U105" data-muse-uid="U292875"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292878-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u292878-4" data-muse-uid="U292878" data-muse-type="txt_frame"><!-- content --><span class="actAsPara shared_content" id="u292878-2" data-content-guid="u292878-2_content"><span id="u292878">КОМПАНИЯ</span></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u292867"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292870" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u292870" href="services.html" data-href="page:U117" data-muse-uid="U292870"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292872-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u292872-4" data-muse-uid="U292872" data-muse-type="txt_frame"><!-- content --><span class="actAsPara shared_content" id="u292872-2" data-content-guid="u292872-2_content"><span id="u292872">УСЛУГИ</span></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u292888"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292889" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u292889" href="methods.html" data-href="page:U129" data-muse-uid="U292889"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292891-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u292891-4" data-muse-uid="U292891" data-muse-type="txt_frame"><!-- content --><span class="actAsPara shared_content" id="u292891-2" data-content-guid="u292891-2_content"><span id="u292891">МЕТОДЫ</span></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem" id="u292881"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292884" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem" id="u292884" href="contact.html" data-href="page:U141" data-muse-uid="U292884"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292887-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem" id="u292887-4" data-muse-uid="U292887" data-muse-type="txt_frame"><!-- content --><span class="actAsPara shared_content" id="u292887-2" data-content-guid="u292887-2_content"><span id="u292887">КОНТАКТЫ</span></span></span><!-- /m_editable --></a><!-- /m_editable --></span></span></span><span class="shared_content" data-content-guid="u292851-4_0_1_content"></span></p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <div class="browser_width colelem shared_content" id="u294419-9-bw" data-content-guid="u294419-9-bw_content">
+     <div class="clearfix" id="u294419-9" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <h1 id="u294419-2">Лаборатория системного анализа</h1>
+      <h2 id="u294419-4">Системный анализ, Исследование операций, Статистика, Модель, Моделирование, Анализ данных, Производственная аналитика, Система поддержки принятия решений, Планирование, Производство, Теория принятия решений, Промышленность</h2>
+      <h3 id="u294419-5">&nbsp;</h3>
+      <h3 id="u294419-7">Производственные системы, Операционные исследования, Бизнес-аналитика, Производственная аналитика, Операционная аналитика, Системная аналитика, Аналитика данных, Методы системного анализа, Методы исследования операций</h3>
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u294389-22-bw">
+     <div class="clearfix" id="u294389-22" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p id="u294389-2">Производственные системы - промышленные предприятия и их интеграционные объединения в форме сетей поставок. Предприятия включают высокотехнологичные производства, интегрированные транспортно-складские комплексы, подготовки и обслуживания производства, снабжения и физического распределения. Важная особенность - высокий уровень автоматизации процессов и производства, и управления. Методология выстраивается на основе системного анализа, исследования операций, моделирования, информатики и статистики, моделирование, оптимизация, исследования, промышленных, статистика, анализ данных</p>
+      <p id="u294389-4">Исследование операций —это: применение научного метода, комплексными научными коллективами, для задач, связанных с управлением организованными с целью получения решений, которые наилучшим образом отвечают целям всей организации.</p>
+      <p id="u294389-6">Отличительные особенности исследования операций, приведенные в этом определении, заключаются в том, что: оно характеризуется системным подходом, использованием комплексных научных коллективов и применением научного метода к&nbsp; управления. Симплекс-метод.</p>
+      <p id="u294389-8">Производственная аналитика (также Операционная аналитика — термин, обозначающий использование аналитических методов исследования операций для принятия оперативных решений и непосредственного управления производством или бизнесом. В связи с этим некоторые авторы говорят о наступлении аналитической революции общей задачи. Исследование операций прежде всего изучает принципы формирования или изменения организационного поведения. Иными словами, операционистов интересует не столько вопрос о том, что представляют собой отдельные аспекты организационного управления, сколько то, что происходит с составом, структурой связи в организации. Это объясняется тем, что исследование операций до сих пор не обладает средствами эффективного моделирования этих аспектов организационного управления по отдельности, следовательно, и средствами определения их отношений друг к другу и к поведению организации в целом. Модель является представлением действительности. Но если модели были бы столь же сложны, как реальные объекты, и ими было бы столь же трудно управлять, то не было бы никакого смысла в их использовании. Хотя для абсолютно точного предсказания какого-либо явления может потребоваться очень большое число переменных, для определения его основных особенностей обычно достаточно лишь относительно небольшого числа переменных. Сложность, однако, состоит в том, чтобы выбрать нужные переменные и правильно определить соотношения между ними.&nbsp; Возрастающие требования к качеству управления в разных сферах человеческой деятельности диктуют необходимость выполнения специальной аналитической работы при формировании и принятии. Современный руководитель должен принимать не интуитивно, а используя соответствующий инструментарий для поиска наилучшего варианта и обоснования сделанного выбора.&nbsp; Для подготовки привлекаются специалисты-эксперты, консультанты, системные аналитики, а в сложных и уникальных ситуациях выбора их участие обязательно. Основная задача экспертов состоят в разработке альтернативных вариантов, выявлении достоинств и недостатков каждого из них, оценке последствий выбора каждого из них, оценке последствий выбора того или иного варианта. Детерминированные модели управления запасами.Для эффективного выполнения своих функций эти специалисты должны обладать знаниями о существующих методах и средствах поддержки принятия решений, а также умением применять такой инструментарий на практике.&nbsp; Роль планирования непосредственно связана с оптимальным распределением ресурсов, а это предмет исследования операций. Метод системного анализа как раз и есть метод структуризации, упорядочения проблем. Системный анализ применяется для того, чтобы поначалу хотя бы слабо структуризовать неструктурированную, смутно определенную проблему, а затем собрать новую дополнительную информацию о ней, установить взаимосвязи составляющих, дать, где это только возможно, количественные оценки, хотя бы субъективные, экспертные и перевести проблему в разряд структуризованных, к решению которых уже можно приложить аппарат математического моделирования и выбора оптимальных решений.</p>
+      <p id="u294389-10">Понятийным аппаратом системного исследования является теория систем, которая рассматривает то общее, что свойственно любым системам. В понятийном аппарате теории систем находят воплощение выработанные практикой и обобщенные наукой общие правила мышления и человеческой деятельности, которые и составляют свойства систем. анализ опирается на широкий круг современных средств научных исследований — моделирования, математики, информатики, наблюдений, экспериментов. Особое внимание обращено на методологию и взаимодействия специалистов различных дисциплин.</p>
+      <p id="u294389-12">Применение средств математического моделирования при&nbsp; задач управления производственными системами. Проблемы эффективного управления производством в промышленности актуальны как никогда в современных условиях.&nbsp; указанных проблем предполагает постановку задачи (определение состава исходных данных, искомых величин, а также принципов формирования решения, описываемых соответствующими критериями и ограничениями), выбор методов и инструментальных средств для решения задачи и непосредственную их реализацию. Системный анализ является сам по себе инструментом обеспечения наличия всех этих трех элементов: выявления и детализации целей, соответствующей информации, ресурсов и их увязки с целями. Таким образом, специалисты по системному анализу должны знать условия успеха своей работы и приступать к ней только при их выполнении. Сетевые модели. Теория линейного программирования. Целевое программирование. Динамическое&nbsp; программирование.</p>
+      <p id="u294389-14">В соответствии с отмеченными четырьмя этапам решения любой проблемы можно выделить четыре взаимно дополняющих понятия, вкладываемых в термин «система». Система есть некоторая целостность, отграниченная| от «внешнего мира», некоторое единство объектов. Эту целостность принято рассматривать как состоящую из частей, называемых элементами. Системный метод включает три этапа: Идентификация системы, частью которого является предмет, который необходимо объяснить. Целочисленное линейное программирование Объяснение поведения или свойств системы. Объяснение поведения или свойств предмета по его роли или функции в содержащем его целом. Опираясь на более глубокий анализ сущности понятия системы как на категорию отражения объектов, следует относиться к этому понятию как к категории теории познания, теории отражения. В связи с этим интересно обратить внимание на вопрос о материальности или нематериальное системы. В основе современного научного подхода к управлению лежит одна важная идея — системный принцип. Она оказала значительное влияние как на планирующую, так и на исполнительную функцию управления. Вероятностные модели управления запасами. Имитационное моделирование. Марковские процессы. В планировании это выразилось в увеличении роли научного анализа управленческих решений. Чтобы выбрать из множества возможных стратегий самые лучшие, управляющие все чаще обращаются за помощью к специалистам по анализу решений, которые иногда называют себя «специалистами по исследованию операций» или «специалистами по системному анализу», или «специалистами по научному управлению». И поскольку они это делают, то общая схема выработки решений отошла от традиционной. Системным анализом стало принято называть приложение системных концепций к функциям управления, связанным с планированием. Для формального решения проблемы необходимо, чтобы принимающий решение выбрал наилучшую из наличных альтернатив.</p>
+      <p id="u294389-16">Классификация экономико-математических моделей. Этапы и проблемы экономико-математического моделирования. Принципы построения и структура интегрированной системы экономико-математических моделей. Сущность оптимизации. Общая структура оптимизационной модели.</p>
+      <p id="u294389-18">Модели систем массового обслуживания. Имитационное моделирование. Производственные функции. Экономико-математические модели управления запасами. Линейная оптимизация. Целочисленная оптимизация. Нелинейная оптимизация. Многоцелевые модели и эвристические методы. Введение в линейное программирование. Двойственность и анализ чувствительности. Теория игр и принятия решений. Вероятностное динамическое программирование. Классическая теория оптимизации. Алгоритмы нелинейного программирования. Технологии анализа данных. Консолидация данных. Трансформация данных. Визуализация данных. Кластерный анализ. Классификация и регрессия, статистические методы, машинное обучение, Анализ и прогнозирование временных рядов, Ансамбли моделей, Сравнение моделей. Применение средств математического моделирования при решении задач управления производственными системами. Графо-аналитические методы и модели управления производственными, Оптимизационные методы и модели управления производственными. Имитационное моделирование производственных систем. “операционная аналитика” применим к ситуации, когда аналитика стала важной частью принятия управленческих решений, личных действий в организации. Операционная аналитика используется для поддержки повседневных решений. Когда аналитический процесс выведен на операционный уровень, он напрямую управляет деятельностью - не просто рекомендует те или иные действия, а непосредственно их реализует.</p>
+      <p id="u294389-19">&nbsp;</p>
+      <p id="u294389-20">&nbsp;</p>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="105" data-content-above-spacer="800" data-content-below-spacer="0"></div>
+    <div class="browser_width colelem" id="u286750-4-bw">
+     <!-- m_editable region-id="editable-static-tag-U286750-BP_infinity" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="clearfix shared_content" id="u286750-4" data-muse-uid="U286750" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" data-content-guid="u286750-4_content"><!-- content -->
+      <p id="u286750-2">© Лаборатория системного анализа 2018</p>
+     </div>
+     <!-- /m_editable -->
+    </div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/angle_l_01.png?crc=196747382" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_1440" data-min-width="961" data-max-width="1440"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="clearfix colelem" id="pslideshowu280345"><!-- group -->
+     <div class="SlideShowWidget clearfix HeroFillFrame" id="slideshowu280345"><!-- none box -->
+      &nbsp;
+      <div class="popup_anchor" id="u280364popup">
+       <div class="SlideShowContentPanel clearfix fullscreen" id="u280364"><!-- stack box -->
+        <!-- m_editable region-id="editable-static-tag-U280365-BP_1440" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide clip_frame fullscreen" id="u280365" data-muse-uid="U280365" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u280365_img" data-src="images/sky.jpg?crc=3981842435" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа." data-width="1440" data-height="615" data-muse-src="images/sky.jpg?crc=3981842435"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U285914-BP_1440" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u285914" data-muse-uid="U285914" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u285914_img" data-src="images/industry_1.jpg?crc=501094860" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа. Моделирование." data-width="1440" data-height="702" data-muse-src="images/industry_1.jpg?crc=501094860"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U286242-BP_1440" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u286242" data-muse-uid="U286242" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u286242_img" data-src="images/factory1.jpg?crc=361656236" src="images/blank.gif?crc=4208392903" alt="" data-width="1440" data-height="690" data-muse-src="images/factory1.jpg?crc=361656236"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U286412-BP_1440" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u286412" data-muse-uid="U286412" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u286412_img" data-src="images/comp1.jpg?crc=4039385855" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа.Разработка программного обеспечения. " data-width="1440" data-height="828" data-muse-src="images/comp1.jpg?crc=4039385855"/>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+      <div class="popup_anchor" id="u280359popup">
+       <div class="SlideShowCaptionPanel clearfix" id="u280359"><!-- stack box -->
+        <!-- m_editable region-id="editable-static-tag-U280362-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption clearfix grpelem" id="u280362-13" data-muse-uid="U280362" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u280362-3"><span id="u280362">System </span><span id="u280362-2">Lab</span></p>
+         <p id="u280362-5">Лаборатория системного анализа</p>
+         <p id="u280362-7">Исследования и моделирование</p>
+         <p id="u280362-9">Статистика и анализ данных</p>
+         <p id="u280362-11">Системы поддержки принятия решений</p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U285961-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u285961-6" data-muse-uid="U285961" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u285961-3"><span id="u285961">​</span><span class="actAsInlineDiv normal_text" id="u286053"><!-- content --><!-- m_editable region-id="editable-static-tag-U286046-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u286046-8" data-muse-uid="U286046" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u286046-2">Моделирование</span><span class="actAsPara" id="u286046-4">Оптимизация производства с помощью</span><span class="actAsPara" id="u286046-6">математических моделей</span></span><!-- /m_editable --></span><span></span></p>
+         <p id="u285961-4">&nbsp;</p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U286289-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u286289-6" data-muse-uid="U286289" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u286289-3"><span id="u286289">​</span><span class="actAsInlineDiv normal_text" id="u286368"><!-- content --><!-- m_editable region-id="editable-static-tag-U286361-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u286361-8" data-muse-uid="U286361" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u286361-2">Исследования</span><span class="actAsPara" id="u286361-4">Операционные исследования и</span><span class="actAsPara" id="u286361-6">системный анализ промышленных проблем</span></span><!-- /m_editable --></span><span></span></p>
+         <p id="u286289-4">&nbsp;</p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U286459-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u286459-6" data-muse-uid="U286459" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u286459-3"><span id="u286459">​</span><span class="actAsInlineDiv normal_text" id="u286525"><!-- content --><!-- m_editable region-id="editable-static-tag-U286518-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u286518-8" data-muse-uid="U286518" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u286518-2">Программное обеспечение</span><span class="actAsPara" id="u286518-4">Системы поддержки принятия решений</span><span class="actAsPara" id="u286518-6">в промышленности</span></span><!-- /m_editable --></span><span></span></p>
+         <p id="u286459-4">&nbsp;</p>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+      <div class="popup_anchor" id="u280351-6popup">
+       <!-- m_editable region-id="editable-static-tag-U280351-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+       <div class="SSPreviousButton clearfix" id="u280351-6" data-muse-uid="U280351" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u280351-4"><span id="u280351">​</span><span id="u280351-2"><span class="actAsInlineDiv normal_text" id="u286666"><!-- content --><span class="actAsDiv museBGSize excludeFromNormalFlow" id="u286637"><!-- simple frame --></span></span></span><span id="u280351-3"></span></p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="popup_anchor" id="u280349-5popup">
+       <!-- m_editable region-id="editable-static-tag-U280349-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+       <div class="SSNextButton clearfix" id="u280349-5" data-muse-uid="U280349" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u280349-3"><span id="u280349"><span class="actAsDiv normal_text" id="u286731"><!-- content --><span class="actAsDiv museBGSize" id="u286701"><!-- simple frame --></span></span></span><span id="u280349-2"></span></p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="browser_width temp_no_id" data-orig-id="u292851-4-bw">
+      <!-- m_editable region-id="editable-static-tag-U292851-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix temp_no_id" data-muse-uid="U292851" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" data-orig-id="u292851-4"><!-- content -->
+       <p><span class="actAsDiv normal_text temp_no_id" data-orig-id="u293098"><!-- content --><span class="MenuBar actAsDiv clearfix temp_no_id" data-orig-id="menuu292866"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292874"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292875" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="company.html" data-href="page:U105" data-muse-uid="U292875" data-orig-id="u292875"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292878-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292878" data-muse-type="txt_frame" data-orig-id="u292878-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292878-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292867"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292870" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="services.html" data-href="page:U117" data-muse-uid="U292870" data-orig-id="u292870"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292872-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292872" data-muse-type="txt_frame" data-orig-id="u292872-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292872-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292888"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292889" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="methods.html" data-href="page:U129" data-muse-uid="U292889" data-orig-id="u292889"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292891-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292891" data-muse-type="txt_frame" data-orig-id="u292891-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292891-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292881"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292884" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="contact.html" data-href="page:U141" data-muse-uid="U292884" data-orig-id="u292884"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292887-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292887" data-muse-type="txt_frame" data-orig-id="u292887-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292887-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span></span></span><span class="placeholder" data-placeholder-for="u292851-4_0_1_content"><!-- placeholder node --></span></p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <span class="browser_width colelem placeholder" data-placeholder-for="u294419-9-bw_content"><!-- placeholder node --></span>
+    <div class="browser_width temp_no_id" data-orig-id="u286750-4-bw">
+     <!-- m_editable region-id="editable-static-tag-U286750-BP_1440" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <span class="clearfix pinned-colelem placeholder" data-placeholder-for="u286750-4_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+    </div>
+    <div class="verticalspacer" data-offset-top="0" data-content-above-spacer="600" data-content-below-spacer="0"></div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/angle_l_01.png?crc=196747382" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_960" data-min-width="801" data-max-width="960"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="clearfix colelem" id="pslideshowu287787"><!-- group -->
+     <div class="SlideShowWidget clearfix HeroFillFrame grpelem" id="slideshowu287787"><!-- none box -->
+      &nbsp;
+      <div class="popup_anchor" id="u287806popup">
+       <div class="SlideShowContentPanel clearfix fullscreen" id="u287806"><!-- stack box -->
+        <!-- m_editable region-id="editable-static-tag-U287807-BP_960" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide clip_frame fullscreen" id="u287807" data-muse-uid="U287807" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u287807_img" data-src="images/sky.jpg?crc=3981842435" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа." data-width="1638" data-height="699" data-muse-src="images/sky.jpg?crc=3981842435"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U288238-BP_960" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u288238" data-muse-uid="U288238" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u288238_img" data-src="images/industry_1.jpg?crc=501094860" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа. Моделирование." data-width="1434" data-height="699" data-muse-src="images/industry_1.jpg?crc=501094860"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U288432-BP_960" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u288432" data-muse-uid="U288432" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u288432_img" data-src="images/factory1.jpg?crc=361656236" src="images/blank.gif?crc=4208392903" alt="" data-width="1459" data-height="699" data-muse-src="images/factory1.jpg?crc=361656236"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U288531-BP_960" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide invi clip_frame fullscreen" id="u288531" data-muse-uid="U288531" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u288531_img" data-src="images/comp1.jpg?crc=4039385855" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа.Разработка программного обеспечения. " data-width="1215" data-height="699" data-muse-src="images/comp1.jpg?crc=4039385855"/>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+      <div class="popup_anchor" id="u287801popup">
+       <div class="SlideShowCaptionPanel clearfix" id="u287801"><!-- stack box -->
+        <!-- m_editable region-id="editable-static-tag-U287804-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption clearfix grpelem" id="u287804-13" data-muse-uid="U287804" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u287804-3"><span id="u287804">System </span><span id="u287804-2">Lab</span></p>
+         <p id="u287804-5">Лаборатория системного анализа</p>
+         <p id="u287804-7">Исследования и моделирование</p>
+         <p id="u287804-9">Статистика и анализ данных</p>
+         <p id="u287804-11">Системы поддержки принятия решений</p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U288292-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u288292-6" data-muse-uid="U288292" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u288292-4"><span id="u288292">​</span><span id="u288292-2"><span class="actAsInlineDiv normal_text" id="u289290"><!-- content --><!-- m_editable region-id="editable-static-tag-U289276-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u289276-8" data-muse-uid="U289276" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u289276-2">Моделирование</span><span class="actAsPara" id="u289276-4">Оптимизация производства с помощью</span><span class="actAsPara" id="u289276-6">математических моделей</span></span><!-- /m_editable --></span></span><span id="u288292-3"></span></p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U288486-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u288486-6" data-muse-uid="U288486" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u288486-4"><span id="u288486">​</span><span id="u288486-2"><span class="actAsInlineDiv normal_text" id="u289434"><!-- content --><!-- m_editable region-id="editable-static-tag-U289420-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u289420-8" data-muse-uid="U289420" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u289420-2">Исследования</span><span class="actAsPara" id="u289420-4">Операционные исследования и</span><span class="actAsPara" id="u289420-6">системный анализ промышленных проблем</span></span><!-- /m_editable --></span></span><span id="u288486-3"></span></p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U288585-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="SSSlideCaption invi clearfix grpelem" id="u288585-6" data-muse-uid="U288585" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u288585-4"><span id="u288585">​</span><span id="u288585-2"><span class="actAsInlineDiv normal_text" id="u289506"><!-- content --><!-- m_editable region-id="editable-static-tag-U289492-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u289492-8" data-muse-uid="U289492" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u289492-2">Программное обеспечение</span><span class="actAsPara" id="u289492-4">Системы поддержки принятия решений</span><span class="actAsPara" id="u289492-6">в промышленности</span></span><!-- /m_editable --></span></span><span id="u288585-3"></span></p>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+      <div class="popup_anchor" id="u287793-5popup">
+       <!-- m_editable region-id="editable-static-tag-U287793-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+       <div class="SSPreviousButton clearfix" id="u287793-5" data-muse-uid="U287793" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p><span id="u287793"><span class="actAsDiv normal_text" id="u289125"><!-- content --><span class="actAsDiv museBGSize" id="u289111"><!-- simple frame --></span></span></span><span id="u287793-2"></span></p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="popup_anchor" id="u287791-4popup">
+       <!-- m_editable region-id="editable-static-tag-U287791-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+       <div class="SSNextButton clearfix" id="u287791-4" data-muse-uid="U287791" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p><span class="actAsDiv normal_text" id="u289089"><!-- content --><span class="actAsDiv museBGSize" id="u289081"><!-- simple frame --></span></span><span></span></p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="browser_width temp_no_id" data-orig-id="u292851-4-bw">
+      <!-- m_editable region-id="editable-static-tag-U292851-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix temp_no_id" data-muse-uid="U292851" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" data-orig-id="u292851-4"><!-- content -->
+       <p><span class="actAsDiv normal_text temp_no_id" data-orig-id="u293098"><!-- content --><span class="MenuBar actAsDiv clearfix temp_no_id" data-orig-id="menuu292866"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292874"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292875" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="company.html" data-href="page:U105" data-muse-uid="U292875" data-orig-id="u292875"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292878-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292878" data-muse-type="txt_frame" data-orig-id="u292878-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292878-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292867"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292870" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="services.html" data-href="page:U117" data-muse-uid="U292870" data-orig-id="u292870"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292872-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292872" data-muse-type="txt_frame" data-orig-id="u292872-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292872-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292888"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292889" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="methods.html" data-href="page:U129" data-muse-uid="U292889" data-orig-id="u292889"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292891-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292891" data-muse-type="txt_frame" data-orig-id="u292891-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292891-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292881"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292884" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="contact.html" data-href="page:U141" data-muse-uid="U292884" data-orig-id="u292884"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292887-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292887" data-muse-type="txt_frame" data-orig-id="u292887-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292887-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span></span></span><span class="placeholder" data-placeholder-for="u292851-4_0_1_content"><!-- placeholder node --></span></p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <span class="browser_width colelem placeholder" data-placeholder-for="u294419-9-bw_content"><!-- placeholder node --></span>
+    <div class="browser_width temp_no_id" data-orig-id="u286750-4-bw">
+     <!-- m_editable region-id="editable-static-tag-U286750-BP_960" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <span class="clearfix pinned-colelem placeholder" data-placeholder-for="u286750-4_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+    </div>
+    <div class="verticalspacer" data-offset-top="105" data-content-above-spacer="699" data-content-below-spacer="0"></div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/angle_l_01.png?crc=196747382" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_800" data-min-width="641" data-max-width="800"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="clearfix colelem" id="pslideshowu288687"><!-- group -->
+     <div class="SlideShowWidget clearfix HeroFillFrame" id="slideshowu288687"><!-- none box -->
+      &nbsp;
+      <div class="popup_anchor" id="u288706popup">
+       <div class="SlideShowContentPanel clearfix fullscreen" id="u288706"><!-- stack box -->
+        <!-- m_editable region-id="editable-static-tag-U288707-BP_800" template="index.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+        <div class="SSSlide clip_frame fullscreen" id="u288707" data-muse-uid="U288707" data-muse-type="img_frame"><!-- image -->
+         <img class="ImageInclude" id="u288707_img" data-src="images/sky.jpg?crc=3981842435" src="images/blank.gif?crc=4208392903" alt="Лаборатория системного анализа." data-width="1874" data-height="800" data-muse-src="images/sky.jpg?crc=3981842435"/>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+     </div>
+     <div class="browser_width temp_no_id" data-orig-id="u292851-4-bw">
+      <!-- m_editable region-id="editable-static-tag-U292851-BP_800" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix temp_no_id" data-muse-uid="U292851" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" data-orig-id="u292851-4"><!-- content -->
+       <p><span class="actAsDiv normal_text temp_no_id" data-orig-id="u293098"><!-- content --><span class="MenuBar actAsDiv clearfix temp_no_id" data-orig-id="menuu292866"><!-- horizontal box --><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292874"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292875" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="company.html" data-href="page:U105" data-muse-uid="U292875" data-orig-id="u292875"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292878-BP_800" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292878" data-muse-type="txt_frame" data-orig-id="u292878-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292878-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292867"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292870" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="services.html" data-href="page:U117" data-muse-uid="U292870" data-orig-id="u292870"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292872-BP_800" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292872" data-muse-type="txt_frame" data-orig-id="u292872-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292872-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292888"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292889" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="methods.html" data-href="page:U129" data-muse-uid="U292889" data-orig-id="u292889"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292891-BP_800" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292891" data-muse-type="txt_frame" data-orig-id="u292891-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292891-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span><span class="MenuItemContainer actAsDiv clearfix grpelem temp_no_id" data-orig-id="u292881"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U292884" template="index.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" --><a class="nonblock nontext MenuItem MenuItemWithSubMenu actAsDiv clearfix colelem temp_no_id" href="contact.html" data-href="page:U141" data-muse-uid="U292884" data-orig-id="u292884"><!-- horizontal box --><!-- m_editable region-id="editable-static-tag-U292887-BP_800" template="index.html" data-type="html" data-ice-options="disableImageResize,link" --><span class="MenuItemLabel NoWrap actAsDiv clearfix grpelem temp_no_id" data-muse-uid="U292887" data-muse-type="txt_frame" data-orig-id="u292887-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u292887-2_content"><!-- placeholder node --></span></span><!-- /m_editable --></a><!-- /m_editable --></span></span></span><span class="placeholder" data-placeholder-for="u292851-4_0_1_content"><!-- placeholder node --></span></p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu294419-9"><!-- group -->
+     <span class="browser_width grpelem placeholder" data-placeholder-for="u294419-9-bw_content"><!-- placeholder node --></span>
+     <div class="browser_width grpelem" id="u356163-5-bw">
+      <!-- m_editable region-id="editable-static-tag-U356163-BP_800" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix" id="u356163-5" data-muse-uid="U356163" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>System <span id="u356163-2">Lab</span></p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <div class="browser_width" id="u288660-10-bw">
+     <!-- m_editable region-id="editable-static-tag-U288660-BP_800" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="clearfix pinned-colelem" id="u288660-10" data-muse-uid="U288660" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p id="u288660-2">Лаборатория системного анализа</p>
+      <p id="u288660-4">Исследования и моделирование</p>
+      <p id="u288660-6">Статистика и анализ данных</p>
+      <p id="u288660-8">Системы поддержки принятия решений</p>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="browser_width temp_no_id" data-orig-id="u286750-4-bw">
+     <!-- m_editable region-id="editable-static-tag-U286750-BP_800" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <span class="clearfix pinned-colelem placeholder" data-placeholder-for="u286750-4_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+    </div>
+    <div class="verticalspacer" data-offset-top="230" data-content-above-spacer="800" data-content-below-spacer="0"></div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_640" data-min-width="481" data-max-width="640"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content" id="page_position_content">
+     <div class="clearfix colelem" id="paccordionu17976"><!-- group -->
+      <div class="browser_width grpelem" id="accordionu17976-bw">
+       <ul class="AccordionWidget clearfix" id="accordionu17976"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100" id="u17977"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100" id="u18015-3" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u18015-3_0_content">&nbsp;</p></div><div class="AccordionPanelContent disn clearfix colelem100" id="u17978"><!-- group --><nav class="MenuBar clearfix grpelem" id="menuu17979"><!-- vertical box --><div class="MenuItemContainer clearfix colelem" id="u201989"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix grpelem" id="u201992" href="index.html" data-href="page:U93"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u201993-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u201993-4_0_content">Главная</p></div></a></div><div class="MenuItemContainer clearfix colelem" id="u18001"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u18002" href="company.html" data-href="page:U105"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u18005-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u18005-4_0_content">Компания</p></div></a></div><div class="MenuItemContainer clearfix colelem" id="u18008"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u18011" href="services.html" data-href="page:U117"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u18013-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u18013-4_0_content">Услуги</p></div></a></div><div class="MenuItemContainer clearfix colelem" id="u17987"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u17990" href="methods.html" data-href="page:U129"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u17992-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u17992-4_0_content">Методы</p></div></a></div><div class="MenuItemContainer clearfix colelem" id="u17980"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u17981" href="contact.html" data-href="page:U141"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u17983-4" data-IBE-flags="txtStyleSrc"><!-- content --><p class="shared_content" data-content-guid="u17983-4_0_content">Контакты</p></div></a></div></nav></div></li>
+       </ul>
+      </div>
+      <div class="grpelem shared_content" id="u273223" data-content-guid="u273223_content"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu294419-9"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u294419-9-bw_content"><!-- placeholder node --></span>
+      <div class="museBGSize grpelem" id="u347553"><!-- simple frame -->
+       <div class="fluid_height_spacer"></div>
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347589-bw" data-content-guid="u347589-bw_content">
+       <div id="u347589"><!-- column -->
+        <div class="clearfix" id="u347589_align_to_page">
+         <div class="museBGSize colelem" id="u347595"><!-- simple frame --></div>
+         <div class="museBGSize colelem" id="u347596"><!-- simple frame --></div>
+         <div class="museBGSize colelem" id="u347594"><!-- simple frame --></div>
+        </div>
+       </div>
+      </div>
+      <div class="browser_width grpelem" id="u347554-10-bw">
+       <!-- m_editable region-id="editable-static-tag-U347554-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347554-10" data-muse-uid="U347554" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347554-2">Лаборатория системного анализа</p>
+        <p id="u347554-4">Исследования и моделирование</p>
+        <p id="u347554-6">Статистика и анализ данных</p>
+        <p id="u347554-8">Системы поддержки принятия решений</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347590-4-bw" data-content-guid="u347590-4-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U347590-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347590-4" data-muse-uid="U347590" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347590-2">Услуги</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347591-7-bw" data-content-guid="u347591-7-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U347591-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347591-7" data-muse-uid="U347591" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347591-2">Математические методы оптимизации</p>
+        <p id="u347591-3">&nbsp;</p>
+        <p id="u347591-5">Нахождение наилучших решений из всех возможных вариантов при заданных условиях и ограничениях</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347592-7-bw" data-content-guid="u347592-7-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U347592-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347592-7" data-muse-uid="U347592" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347592-2">Операционные исследования и моделирование</p>
+        <p id="u347592-3">&nbsp;</p>
+        <p id="u347592-5">Моделирование процессов организации и управления производством для отыскания наиболее эффективных способов достижения поставленных целей</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347593-7-bw" data-content-guid="u347593-7-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U347593-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347593-7" data-muse-uid="U347593" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347593-2">Статистические методы и анализ данных</p>
+        <p id="u347593-3">&nbsp;</p>
+        <p id="u347593-5">Обработка большого количества информации о производстве для принятия эффективных управленческих решений</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="clearfix colelem" id="pu347718"><!-- group -->
+      <div class="browser_width grpelem shared_content" id="u347718-bw" data-content-guid="u347718-bw_content">
+       <div id="u347718"><!-- column -->
+        <div class="clearfix" id="u347718_align_to_page">
+         <div class="museBGSize colelem" id="u347720"><!-- simple frame --></div>
+         <div class="museBGSize colelem" id="u347722"><!-- simple frame --></div>
+         <!-- m_editable region-id="editable-static-tag-U347723-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+         <a class="nonblock nontext clearfix colelem" id="u347723-4" href="services.html" data-href="page:U117" data-muse-uid="U347723" data-muse-type="txt_frame"><!-- content --><p id="u347723-2">ПОДРОБНЕЕ</p></a>
+         <!-- /m_editable -->
+        </div>
+       </div>
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347719-7-bw" data-content-guid="u347719-7-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U347719-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347719-7" data-muse-uid="U347719" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347719-2">Разработка программного обеспечения</p>
+        <p id="u347719-3">&nbsp;</p>
+        <p id="u347719-5">Программное обеспечения для моделирования , решения оптимизационных задач и анализа данных в промышленности</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347721-7-bw" data-content-guid="u347721-7-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U347721-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347721-7" data-muse-uid="U347721" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347721-2">Методология</p>
+        <p id="u347721-3">&nbsp;</p>
+        <p id="u347721-5">Методология решения деловых и промышленных проблем на основе междисциплинарного и системного подходов.</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="clearfix colelem" id="pu347952"><!-- group -->
+      <div class="browser_width grpelem shared_content" id="u347952-bw" data-content-guid="u347952-bw_content">
+       <div class="museBGSize" id="u347952"><!-- group -->
+        <div class="clearfix" id="u347952_align_to_page">
+         <!-- m_editable region-id="editable-static-tag-U347953-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+         <a class="nonblock nontext clearfix grpelem" id="u347953-4" href="company.html" data-href="page:U105" data-muse-uid="U347953" data-muse-type="txt_frame"><!-- content --><p id="u347953-2">ПОДРОБНЕЕ</p></a>
+         <!-- /m_editable -->
+        </div>
+       </div>
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347954-4-bw" data-content-guid="u347954-4-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U347954-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347954-4" data-muse-uid="U347954" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347954-2">О компании</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u347955-7-bw" data-content-guid="u347955-7-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U347955-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u347955-7" data-muse-uid="U347955" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u347955-2">Основное направление деятельности</p>
+        <p id="u347955-3">&nbsp;</p>
+        <h4 id="u347955-5">Исследования, разработка и применение междисциплинарных научных методов качественного и количественного анализа, инструментов моделирования и программирования к социотехническим, экономическим и управляющим системам в промышленном секторе.</h4>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="browser_width colelem shared_content" id="u348041-4-bw" data-content-guid="u348041-4-bw_content">
+      <!-- m_editable region-id="editable-static-tag-U348041-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix" id="u348041-4" data-muse-uid="U348041" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p id="u348041-2">Методы</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="museBGSize colelem shared_content" id="u348043" data-content-guid="u348043_content"><!-- simple frame --></div>
+     <div class="browser_width colelem shared_content" id="u348038-13-bw" data-content-guid="u348038-13-bw_content">
+      <!-- m_editable region-id="editable-static-tag-U348038-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix" id="u348038-13" data-muse-uid="U348038" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <h3 id="u348038-2">Математические методы оптимизации</h3>
+       <h3 id="u348038-3">&nbsp;</h3>
+       <h3 id="u348038-5">Нахождение наилучших решений</h3>
+       <h3 id="u348038-7">из всех возможных вариантов</h3>
+       <h3 id="u348038-9">при заданных условиях и</h3>
+       <h3 id="u348038-11">ограничениях</h3>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="museBGSize colelem shared_content" id="u348044" data-content-guid="u348044_content"><!-- simple frame --></div>
+     <div class="browser_width colelem shared_content" id="u348039-15-bw" data-content-guid="u348039-15-bw_content">
+      <!-- m_editable region-id="editable-static-tag-U348039-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix" id="u348039-15" data-muse-uid="U348039" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <h3 id="u348039-2">Операционные исследования и моделирование</h3>
+       <h3 id="u348039-3">&nbsp;</h3>
+       <h3 id="u348039-5">Моделирование процессов</h3>
+       <h3 id="u348039-7">организации и управления производством</h3>
+       <h3 id="u348039-9">для отыскания наиболее эффективных</h3>
+       <h3 id="u348039-11">способов достижения</h3>
+       <h3 id="u348039-13">поставленных целей</h3>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="museBGSize colelem shared_content" id="u348042" data-content-guid="u348042_content"><!-- simple frame --></div>
+     <div class="browser_width colelem shared_content" id="u348040-13-bw" data-content-guid="u348040-13-bw_content">
+      <!-- m_editable region-id="editable-static-tag-U348040-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix" id="u348040-13" data-muse-uid="U348040" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <h3 id="u348040-2">Статистические методы и анализ данных</h3>
+       <h3 id="u348040-3">&nbsp;</h3>
+       <h3 id="u348040-5">Обработка большого количества</h3>
+       <h3 id="u348040-7">информации о производстве</h3>
+       <h3 id="u348040-9">для принятия эффективных</h3>
+       <h3 id="u348040-11">управленческих решений</h3>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U348045-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <a class="nonblock nontext clearfix colelem shared_content" id="u348045-4" href="methods.html" data-href="page:U129" data-muse-uid="U348045" data-muse-type="txt_frame" data-content-guid="u348045-4_content"><!-- content --><p id="u348045-2">ПОДРОБНЕЕ</p></a>
+     <!-- /m_editable -->
+     <div class="clearfix colelem" id="pu348704"><!-- group -->
+      <div class="browser_width grpelem shared_content" id="u348704-bw" data-content-guid="u348704-bw_content">
+       <div id="u348704"><!-- group -->
+        <div class="clearfix" id="u348704_align_to_page">
+         <!-- m_editable region-id="editable-static-tag-U349512-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+         <a class="nonblock nontext clearfix grpelem" id="u349512-4" href="contact.html" data-href="page:U141" data-muse-uid="U349512" data-muse-type="txt_frame"><!-- content --><p id="u349512-2">ПОДРОБНЕЕ</p></a>
+         <!-- /m_editable -->
+        </div>
+       </div>
+      </div>
+      <div class="browser_width grpelem shared_content" id="u348173-bw" data-content-guid="u348173-bw_content">
+       <div id="u348173"><!-- group -->
+        <div class="clearfix" id="u348173_align_to_page">
+         <!-- m_editable region-id="editable-static-tag-U348176-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+         <a class="nonblock nontext clearfix grpelem" id="u348176-4" href="http://systems-analysis.ru/" target="_blank" data-muse-uid="U348176" data-muse-type="txt_frame"><!-- content --><p id="u348176-2">ПОДРОБНЕЕ</p></a>
+         <!-- /m_editable -->
+        </div>
+       </div>
+      </div>
+      <div class="browser_width grpelem shared_content" id="u348324-bw" data-content-guid="u348324-bw_content">
+       <div class="museBGSize" id="u348324"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem shared_content" id="u348174-4-bw" data-content-guid="u348174-4-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U348174-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u348174-4" data-muse-uid="U348174" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u348174-2">Информация</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u348175-bw" data-content-guid="u348175-bw_content">
+       <div class="museBGSize" id="u348175"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem shared_content" id="u348264-4-bw" data-content-guid="u348264-4-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U348264-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u348264-4" data-muse-uid="U348264" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u348264-2">Контакты</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u348265-9-bw" data-content-guid="u348265-9-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U348265-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u348265-9" data-muse-uid="U348265" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u348265-2">phone: +7(952)268-66-40</p>
+        <p id="u348265-4">e-mail: info@system-laboratory.ru</p>
+        <p id="u348265-6">system-laboratory.ru</p>
+        <p id="u348265-7">&nbsp;</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u348654-4-bw" data-content-guid="u348654-4-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U348654-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u348654-4" data-muse-uid="U348654" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u348654-2">О компании</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <div class="browser_width grpelem shared_content" id="u348655-7-bw" data-content-guid="u348655-7-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U348655-BP_640" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u348655-7" data-muse-uid="U348655" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u348655-2">Основное направление деятельности</p>
+        <p id="u348655-3">&nbsp;</p>
+        <h4 id="u348655-5">Исследования, разработка и применение междисциплинарных научных методов качественного и количественного анализа, инструментов моделирования и программирования к социотехническим, экономическим и управляющим системам в промышленном секторе.</h4>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="verticalspacer" data-offset-top="6231" data-content-above-spacer="6231" data-content-below-spacer="0"></div>
+     <div class="browser_width colelem shared_content" id="u273197-4-bw" data-content-guid="u273197-4-bw_content">
+      <div class="clearfix" id="u273197-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p id="u273197-2">© Лаборатория системного анализа 2018</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_480" data-min-width="321" data-max-width="480"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="clearfix colelem temp_no_id" data-orig-id="paccordionu17976"><!-- group -->
+      <div class="browser_width grpelem temp_no_id" data-orig-id="accordionu17976-bw">
+       <ul class="AccordionWidget clearfix temp_no_id" data-orig-id="accordionu17976"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100 temp_no_id" data-orig-id="u17977"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100 temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u18015-3"><!-- content --><span class="placeholder" data-placeholder-for="u18015-3_0_content"><!-- placeholder node --></span></div><div class="AccordionPanelContent disn clearfix colelem100 temp_no_id" data-orig-id="u17978"><!-- group --><nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu17979"><!-- vertical box --><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u201989"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix grpelem temp_no_id" href="index.html" data-href="page:U93" data-orig-id="u201992"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u201993-4"><!-- content --><span class="placeholder" data-placeholder-for="u201993-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u18001"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="company.html" data-href="page:U105" data-orig-id="u18002"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u18005-4"><!-- content --><span class="placeholder" data-placeholder-for="u18005-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u18008"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="services.html" data-href="page:U117" data-orig-id="u18011"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u18013-4"><!-- content --><span class="placeholder" data-placeholder-for="u18013-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u17987"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="methods.html" data-href="page:U129" data-orig-id="u17990"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u17992-4"><!-- content --><span class="placeholder" data-placeholder-for="u17992-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u17980"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="contact.html" data-href="page:U141" data-orig-id="u17981"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u17983-4"><!-- content --><span class="placeholder" data-placeholder-for="u17983-4_0_content"><!-- placeholder node --></span></div></a></div></nav></div></li>
+       </ul>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u273223_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu294419-9"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u294419-9-bw_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem" id="u347532-bw">
+       <div class="museBGSize" id="u347532"><!-- simple frame --></div>
+      </div>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347589-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347718-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347952-bw_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem shared_content" id="u346768-10-bw" data-content-guid="u346768-10-bw_content">
+       <!-- m_editable region-id="editable-static-tag-U346768-BP_480" template="index.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix" id="u346768-10" data-muse-uid="U346768" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u346768-2">Лаборатория системного анализа</p>
+        <p id="u346768-4">Исследования и моделирование</p>
+        <p id="u346768-6">Статистика и анализ данных</p>
+        <p id="u346768-8">Системы поддержки принятия решений</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347590-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347591-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347592-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347593-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347719-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347721-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347954-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347955-7-bw_content"><!-- placeholder node --></span>
+     </div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u348041-4-bw_content"><!-- placeholder node --></span>
+     <span class="museBGSize colelem placeholder" data-placeholder-for="u348043_content"><!-- placeholder node --></span>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u348038-13-bw_content"><!-- placeholder node --></span>
+     <span class="museBGSize colelem placeholder" data-placeholder-for="u348044_content"><!-- placeholder node --></span>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u348039-15-bw_content"><!-- placeholder node --></span>
+     <span class="museBGSize colelem placeholder" data-placeholder-for="u348042_content"><!-- placeholder node --></span>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u348040-13-bw_content"><!-- placeholder node --></span>
+     <!-- m_editable region-id="editable-static-tag-U348045-BP_480" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <span class="nonblock nontext clearfix colelem placeholder" data-placeholder-for="u348045-4_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+     <div class="clearfix colelem" id="pu348324"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348324-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348654-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348655-7-bw_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu348704"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348704-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348264-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348265-9-bw_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem" id="pu348173"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348173-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348174-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348175-bw_content"><!-- placeholder node --></span>
+     </div>
+     <div class="verticalspacer" data-offset-top="5559" data-content-above-spacer="5559" data-content-below-spacer="0"></div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u273197-4-bw_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_320" data-max-width="320"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="clearfix colelem temp_no_id" data-orig-id="paccordionu17976"><!-- group -->
+      <div class="browser_width grpelem temp_no_id" data-orig-id="accordionu17976-bw">
+       <ul class="AccordionWidget clearfix temp_no_id" data-orig-id="accordionu17976"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100 temp_no_id" data-orig-id="u17977"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100 temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u18015-3"><!-- content --><span class="placeholder" data-placeholder-for="u18015-3_0_content"><!-- placeholder node --></span></div><div class="AccordionPanelContent disn clearfix colelem100 temp_no_id" data-orig-id="u17978"><!-- group --><nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu17979"><!-- vertical box --><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u201989"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix grpelem temp_no_id" href="index.html" data-href="page:U93" data-orig-id="u201992"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u201993-4"><!-- content --><span class="placeholder" data-placeholder-for="u201993-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u18001"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="company.html" data-href="page:U105" data-orig-id="u18002"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u18005-4"><!-- content --><span class="placeholder" data-placeholder-for="u18005-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u18008"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="services.html" data-href="page:U117" data-orig-id="u18011"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u18013-4"><!-- content --><span class="placeholder" data-placeholder-for="u18013-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u17987"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="methods.html" data-href="page:U129" data-orig-id="u17990"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u17992-4"><!-- content --><span class="placeholder" data-placeholder-for="u17992-4_0_content"><!-- placeholder node --></span></div></a></div><div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u17980"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="contact.html" data-href="page:U141" data-orig-id="u17981"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-IBE-flags="txtStyleSrc" data-orig-id="u17983-4"><!-- content --><span class="placeholder" data-placeholder-for="u17983-4_0_content"><!-- placeholder node --></span></div></a></div></nav></div></li>
+       </ul>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u273223_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu294419-9"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u294419-9-bw_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem" id="u346767-bw">
+       <div class="museBGSize" id="u346767"><!-- simple frame --></div>
+      </div>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347589-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347718-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347952-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u346768-10-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347590-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347591-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347592-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347593-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347719-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347721-7-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347954-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u347955-7-bw_content"><!-- placeholder node --></span>
+     </div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u348041-4-bw_content"><!-- placeholder node --></span>
+     <span class="museBGSize colelem placeholder" data-placeholder-for="u348043_content"><!-- placeholder node --></span>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u348038-13-bw_content"><!-- placeholder node --></span>
+     <span class="museBGSize colelem placeholder" data-placeholder-for="u348044_content"><!-- placeholder node --></span>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u348039-15-bw_content"><!-- placeholder node --></span>
+     <span class="museBGSize colelem placeholder" data-placeholder-for="u348042_content"><!-- placeholder node --></span>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u348040-13-bw_content"><!-- placeholder node --></span>
+     <!-- m_editable region-id="editable-static-tag-U348045-BP_320" template="index.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <span class="nonblock nontext clearfix colelem placeholder" data-placeholder-for="u348045-4_content"><!-- placeholder node --></span>
+     <!-- /m_editable -->
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu348704"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348704-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348324-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348264-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348265-9-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348654-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348655-7-bw_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu348173"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348173-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348174-4-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u348175-bw_content"><!-- placeholder node --></span>
+     </div>
+     <div class="verticalspacer" data-offset-top="5601" data-content-above-spacer="5601" data-content-below-spacer="0"></div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u273197-4-bw_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide weather to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musepolyfill.bgsize","webpro","musewpslideshow","jquery.museoverlay","touchswipe","jquery.musemenu","jquery.watch","musewpdisclosure","jquery.museresponsive"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.detectScreenResolution();/* HiDPI screens */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.initWidget('#slideshowu287041', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'horizontal',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'fullScreen',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu287041 */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_1440', '#bp_960', '#bp_800', '#bp_640', '#bp_480', '#bp_320'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('#slideshowu280345', ['#bp_1440'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:8000,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:300,enableSwipe:true,elastic:'fullScreen',resumeAutoplay:true,resumeAutoplayInterval:8000,playOnce:false,autoActivate_runtime:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu280345 */
+Muse.Utils.initWidget('#slideshowu287787', ['#bp_960'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'horizontal',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'fullScreen',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu287787 */
+Muse.Utils.initWidget('#slideshowu288687', ['#bp_800'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:false,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'horizontal',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:false,elastic:'fullScreen',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu288687 */
+Muse.Utils.initWidget('#accordionu17976', ['#bp_640', '#bp_480', '#bp_320'], function(elem) { return new WebPro.Widget.Accordion(elem, {canCloseAll:true,defaultIndex:-1}); });/* #accordionu17976 */
+$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=85721165" type="text/javascript" async data-main="scripts/museconfig.js?crc=436936948" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   </body>
+</html>
